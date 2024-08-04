@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Containers</title>
+    <style>
+.additional-container {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px; /* Adjust margin-right for desired spacing */
+   /* height: 320px;
+    width: 1300px;*/
+    margin-left: 70px;
+    margin-bottom: 30px; /* Add margin to create space between this container and other content */
+}
+
+/* Style for individual additional containers */
+.additional-item {
+    height: 600px;
+    width: calc(25% - 20px); /* Calculate the width for each container with margin */
+    flex: 0 0 450px; /* Set the width for each container without margin */
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to create space between containers */
+    padding: 0px;
+}
+
+/* Style for the image in the additional container */
+.additional-image {
+    height: 250px; /* 75% of the container's height for the image */
+    width:430px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Rounded corners only at the top */
+}
+
+/* Style for the content within the additional container */
+.additional-content {
+    margin-top: 5px; /* Add space between the image and content */
+    padding: 0px;
+}
+
+.h3 {
+margin-top: 5px;
+}
+p{
+margin-left: 25px;
+margin-right: 25px;
+
+}
+.review-box {
+    background-color: green;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    width: 60px; /* Adjust the width as needed */
+    height: 20px;
+    margin-left: 180px; /* Center the box horizontally */
+    border-radius: 10px;
+}
+
+.rating {
+    font-size: 15px;
+    font-weight: bold;   
+    }
+    .location-rating-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 10px;/* Align items vertically in the center */
+  }
+
+  /* Style for the location symbol */
+  .location-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+     /* Adjust the margin as needed */
+  }
+  
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+   
+
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-content"> 
+            <h3>Taj Lands End</h3>
+        </div>
+        <img class="additional-image" src="https://i.ytimg.com/vi/kDu-OK1BVks/maxresdefault.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+                <div class="location-icon">
+                  <i class='fas fa-map-marker-alt'></i>
+                </div>
+                <h6>2 kms from Bandra Worli Sea Link</h6>
+                <div class="review-box">
+                    <div class="rating">8.6/10</div>
+                  </div>
+              </div>
+              <p>Experience contemporary luxury blended with heartfelt Indian hospitality at Taj Land's End. Overlooking the stunning Arabian Sea, this 5-star haven features award-winning spa treatments, aromatherapies, an outdoor pool and five dining options. The elegant suites boast chic interiors with minimal decor and fine bedding. 
+              </p>
+              <h5 style="color: lightslategray; margin-right: 200px;">5 star resort with 10 room options</h5>
+            </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-content">
+            <h3>Trident Bandra Kurla</h3>
+        </div>
+        <img class="additional-image" src="https://i.travelapi.com/lodging/2000000/1830000/1823800/1823707/0f7d56fb_z.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+            <div class="location-info">
+                <i class='fas fa-map-marker-alt'></i>
+            </div>
+                  <h6>1 kms from Kurla Station</h6>
+            
+            <div class="review-box">
+                <div class="rating">8.8/10</div>
+            </div>
+        </div>
+            
+            <p>Located in Mumbai, Hotel Trident Bandra Kurla offers a range of amenities to make your stay comfortable and enjoyable. Guests can take advantage of facilities such as a restaurant, bar, fitness center, business center, free parking, and a safety deposit box. The hotel also features a hammam, outdoor pool, and free WiFi for guests to relax and unwind.  
+            </p>
+            
+            <h5 style="color: lightslategray; margin-right: 200px;">5-star resort with 2 room options</h5>
+        </div>
+    </div>
+</div>
+<!--container 3 & 4-->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-content"> 
+            <h3>Taj Santacruz</h3>
+        </div>
+        <img class="additional-image" src="https://d2xf5gjipzd8cd.cloudfront.net/available/988861014/988861014_WxH.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+                <div class="location-icon">
+                  <i class='fas fa-map-marker-alt'></i>
+                </div>
+                <h6>1 kms from Mumbai Airport</h6>
+                <div class="review-box">
+                    <div class="rating">8.7/10</div>
+                  </div>
+              </div>
+              <p>Strategically situated just 2-minutes away from the Chhatrapati Shivaji Maharaj Domestic Airport with views of the runway, Taj Santacruz embodies the best aspects of Palatial and Art Deco design. This luxury hotel boasts majestic architecture with a medley of traditional and modern decor. The elegant rooms at Taj feature intricate interior designs and contemporary amenities.
+            </p>
+              <h5 style="color: lightslategray; margin-right: 200px;">Resort with 2 room options</h5>
+            </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-content">
+            <h3>The Orchid- Ecotel Mumbai Airport</h3>
+        </div>
+        <img class="additional-image" src="data:image/jpeg;base64,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">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+            <div class="location-info">
+                <i class='fas fa-map-marker-alt'></i>
+            </div>
+                  <h6>1 kms from Vile Parle Station</h6>
+            
+            <div class="review-box">
+                <div class="rating">7.5/10</div>
+            </div>
+        </div>
+            
+            <p>Conveniently located just 5km away from the Mumbai International Aiport, The Orchid Hotel creates a welcoming retreat for business and leisure travellers. Opening to a magnificent facade, the hotel's lavish lobby makes for a great spot to relax, sip on some coffee and read the newspaper. Tastefully designed in traditional old-world furnishings and pristine marble bathrooms, the rooms evoke a royal ambience.
+            </p>
+            
+            <h5 style="color: lightslategray; margin-right: 200px;"> Resort with 5 room options</h5>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

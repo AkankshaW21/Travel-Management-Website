@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Form</title>
+	<link rel="stylesheet" type="text/css" href="Hotelbooking.css">
+	<script>
+		function validateForm() {
+			if (isEmpty(document.getElementById('data_3').value.trim())) {
+				alert('First name is required!');
+				return false;
+			}
+			if (isEmpty(document.getElementById('data_4').value.trim())) {
+				alert('Last name is required!');
+				return false;
+			}
+			if (!validateEmail(document.getElementById('data_5').value.trim())) {
+				alert('Email must be a valid email address!');
+				return false;
+			}
+			return true;
+		}
+		function isEmpty(str) { return (str.length == 0 || !str.trim()); }
+		function validateEmail(email) {
+			var re = "";
+			return isEmpty(email) || re.test(email);
+		}
+	</script>
+</head>
+<body>
+	<div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+	<h1>Resort Booking</h1>
+	<div class="container">
+		<form method="POST" action="bookingresorts.php" name="form" onsubmit="return validateForm()">
+			<div class="textbox">
+				<input type="text" placeholder=" Resort Name" name="resort_name" value=""  onkeypress="return /[a-zA-Z]/i.test(event.key)" required>  
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Resort Country" name="resort_country" value="" onkeypress="return /[a-zA-Z]/i.test(event.key)" required> 
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Resort State" name="resort_state" value="" required pattern="[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+.[a-z]{2,4}" title="Invalid Email">
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Resort City" name="resort_city" value="" onkeypress="return /[a-zA-Z]/i.test(event.key)" required>
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Resort Pincode" name="resort_pincode" value="" onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" pattern="([0-9]){4,}" required>
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Customer First Name" name="cus_fname" value="" required>
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Customer Last Name" name="cus_lname" value="" required>
+			</div>
+
+			<div class="textbox">
+				<input type="text" placeholder="Customer Email" name="cus_email" value="" required>
+			</div>
+			<div class="textbox">
+				<input type="text" placeholder="Customer Phone " name="cus_phone" value="" onkeypress="return /[0-9]/i.test(event.key)" maxlength="10" pattern="([0-9]){10,}" required>
+			</div>
+
+			<div class="btn">
+				<input name="submit" value="Submit" type="submit">
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
