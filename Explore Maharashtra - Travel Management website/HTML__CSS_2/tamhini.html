@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title> Tamhini Ghat Waterfall </title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-size: cover;
+            height: 400px;
+            text-align: center;
+            color: rgb(26, 14, 14);
+            padding: 20px;
+        }
+
+
+        /* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the intro container */
+.intro-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Style the background image */
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+/* Add a semi-transparent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style the intro text */
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    margin-top: 10px;
+}
+
+
+
+        h1 {
+            margin-top: 80px;
+        }
+
+
+
+        /*history section styling*/
+
+        .history-section {
+            background-color: #e5ebe5;
+            padding: 20px;
+           
+        }
+
+        /* history Container styles */
+        .container {
+            margin: 10px;
+            padding: 20px;
+            color: #090000;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        /* Flex container for responsiveness */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        /* Header and Location styles */
+        .header-container {
+            flex-basis: 100%;
+            background-color: #c0dad8;
+            color: #ada8a8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Main content container styles */
+        .main-container {
+            flex-basis: calc(50% - 20px);
+            background-color: #ccd9d6;
+        }
+
+        /* Map container styles */
+        /* Map container styles */
+.map-container {
+    flex-basis: calc(50% - 20px);
+    background-color: #222929;
+    color: #fff;
+    margin: 10px auto; /* Center horizontally by adding 'auto' to left and right margins */
+    padding: 20px;
+    text-align: center; /* Center the content */
+}
+
+
+        /* Responsive CSS for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-basis: 80%;
+            }
+        }
+
+
+/* Style the flex container to arrange items side by side */
+
+
+/* Style for the individual containers */
+/* Style for the Best Time to Visit container */
+/* Style for the Best Time to Visit container */
+.best-time-container {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Style for the Tips Before Visiting Waterfall container */
+.tips-container {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Style for the flex container to arrange items side by side */
+.flex-container {
+    display: flex;
+}
+
+
+
+
+        /* Nearby Places container styles */
+        .nearby-places-container {
+            flex-basis: calc(25% - 20px);
+            margin: 8px;
+            padding: 1px;
+            background-color: #d8e4e9;
+            color: #151313;
+        }
+
+        .nearbyplaces-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Center the Location container */
+        .center-location-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Flex container for the last 4 Nearby Places containers */
+        .nearby-places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+
+
+          /* CSS for the gallery container */
+            /* CSS for the gallery container */
+        .gallery-container {
+            max-width: 600px; /* Set a maximum width for the image gallery */
+            margin: 0 auto;  /* Add margin to create space between the two containers */
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .gallery {
+            display: inline-block;
+            transition: transform 1s ease-in-out;
+        }
+        
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+       
+
+
+/*hotel design */
+        .hotel-container {
+            width: 23%; /* Adjust the width as needed */
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #b1aaaa;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: #eceaea;
+        }
+
+        /* Flex container for arranging containers side by side */
+        .hotel-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Wrap to the next row if the screen is too narrow */
+        }
+        /* Style for hotel images */
+        .hotel-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+
+          /* Style for the "More Details" button */
+          .more-details-button {
+            background-color: #565b5b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .more-details-button:hover {
+            background-color: #1e7e7b;
+        }
+
+
+        
+  .footer {
+    margin-top:15px;
+    
+
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.85rem;
+}
+ .foot-panel2  {
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+ } 
+        .foot-panel3 {
+         background-color: #222f3d;
+         color: white;
+         border-top:0.5px solid white;
+         height:70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+  }
+  .separate-container {
+            background-color: #607389;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .separate-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for social media icons within separate container */
+        .social-icons-container {
+            font-size: 34px;
+            
+        }
+        p{
+            margin-left: 25px;
+            margin-right: 25px;
+            
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="intro-container">
+       <img src="https://tourdefarm.in/wp-content/uploads/2021/01/Tamhani-Ghat-Weekend-Getaway-1.jpg" alt="Website Background Image" class="background-image">
+    <div class="overlay"></div>
+    <div class="intro-text">
+        <h1>Tamhini Ghat Waterfall</h1>
+        <h2></h2>
+       
+    </div>
+   
+</div>
+
+
+
+<main>
+    <section class="history-section container">
+        <h2>History</h2>
+       <p> The Tamhini Ghat Waterfalls are located on the Tamhini Ghat mountain passage, which is situated between Mulshi and Tamhini in the state of Maharashtra, India. The ghat is located on the crest of the Western Ghat mountain ranges, and it is known for its picturesque surroundings, which include numerous cascading waterfalls, lakes, and verdant forests. </p>
+       <p> The Tamhini Ghat Waterfalls did not exist prior to the construction of the Tamhini Ghat road in the early 2000s. The entire area was owned by the Tata Power company, and it was not open to the general public. However, considering the demand for supplementary routes to the Konkan region from Pune and Lonavala owing to the increasing number of travellers, this route was proposed and opened. </p>
+       <p> The Tamhini Ghat road is a winding 15-kilometer road that cuts through the Sahyadri mountain range. The construction of the road was a challenging task, as it involved the blasting of rocks and the cutting of tunnels through the mountains. However, the road was eventually completed and opened to traffic in 2004 </p>
+       <p> With the opening of the Tamhini Ghat road, the Tamhini Ghat Waterfalls became accessible to the general public for the first time. The waterfalls quickly became a popular tourist destination, especially during the monsoon season, when the waterfalls are at their most spectacular. </p>
+       <p> The Tamhini Ghat Waterfalls are a series of waterfalls that cascade down the mountain slopes into a pool at the base. The waterfalls are surrounded by lush greenery, and they offer a refreshing respite from the heat and humidity of the Konkan region. </p>
+        <p>  </p>
+    </section>
+    <br>
+
+
+    <!-- Main Features container -->
+    <div class="main-container container">
+        <h2>Main Features</h2>
+        <ul>
+         <li><strong> Multiple waterfalls:  </strong> The Tamhini Ghat Waterfalls are a series of waterfalls, each with its own unique character. Some of the waterfalls are tall and slender, while others are wide and cascading.          </li>
+            <li><strong> Lush greenery:    </strong>The Tamhini Ghat Waterfalls are surrounded by lush greenery, including trees, shrubs, and wildflowers. The greenery provides a beautiful backdrop for the waterfalls and offers a refreshing respite from the heat and humidity.           </li>
+            <li><strong>  Natural pool:    </strong> The Tamhini Ghat Waterfalls cascade into a natural pool at the base. The pool is a popular spot for swimming and cooling off.          </li>
+            <li><strong> Accessibility:    </strong>  The Tamhini Ghat Waterfalls are easily accessible by road. There are a number of resorts and homestays located in the vicinity of the waterfalls, offering accommodation and other facilities to tourists.         </li>
+            <li>The Tamhini Ghat Waterfalls are a beautiful and serene natural attraction that offer visitors a chance to escape the hustle and bustle of city life and immerse themselves in the beauty of nature</li>
+            <li> The Tamhini Ghat Waterfalls are easily accessible by road, making them a convenient destination for visitors from Pune and other nearby cities</li>    
+        </div>
+
+
+
+        
+ <div style="display: flex;">
+    <div class="gallery-container">
+        <div class="gallery">
+            
+            <img src=" https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/7/2017/03/15145524/150317_Tamheeni-Ghat01.jpg    " alt="Image 2">
+            <img src="  https://placesnearpune.com/images/waterfall_tamhini_ghat_2.jpg   " alt="Image 2">
+            <img src="  https://tourdefarm.in/wp-content/uploads/2021/01/Tamhani-Ghat-Weekend-Getaway-1.jpg   " alt="Image 2">
+            <img src="   https://1.bp.blogspot.com/-UHmsAcOfMtE/V4iXYu2-bRI/AAAAAAAADuo/jo4m2TxHuh0hPp2MHXWYwcBWMzNWgCwAwCLcB/w1200-h630-p-k-no-nu/IMG_20160710_155332494_HDR.jpg  " alt="Image 2">
+            <img src="   https://www.treksandtrails.org/blog/wp-content/uploads/2020/09/Tamhini-Ghat-17.jpg  " alt="Image 2">
+              </div>
+    </div>
+
+  
+   </div>
+   <br>
+
+
+
+    <script>
+        const gallery = document.querySelector('.gallery');
+        let imageIndex = 0;
+        const intervalTime = 3000; // Change image every 3 seconds
+
+        function nextImage() {
+            imageIndex = (imageIndex + 1) % gallery.children.length;
+            updateGallery();
+        }
+
+        function updateGallery() {
+            const translateX = -imageIndex * 100;
+            gallery.style.transition = 'transform 1s ease-in-out';
+            gallery.style.transform = `translateX(${translateX}%)`;
+        }
+
+        setInterval(nextImage, intervalTime);
+    </script>
+
+
+<div class="flex-container">
+       
+            <!-- Best Time to Visit container -->
+            <div class="best-time-container container">
+                <h2>Best Time to Visit</h2>
+            <p> 
+                The best time to visit the Tamhini Ghat Waterfalls is during the monsoon season, which is from <strong>June to September. </strong>  </p> 
+            <p>   During this time, the waterfalls are at their most spectacular, as they are swollen with rainwater and cascade down the mountain slopes in a thunderous roar. </p>    
+            <p>  Waterfalls can be very crowded during the monsoon season, especially on weekends. If you are looking for a more peaceful experience, it is best to visit during the weekdays.  </p> 
+            <p>    </p> 
+            <p>    </p> 
+            <p>    </p> 
+            </div>
+
+            <!-- Tips Before Visiting Waterfall container -->
+            <div class="container">
+                <h2>Tips Before Visiting </h2>
+            <ul>
+               <li> Start early in the morning to avoid the crowds.  </li>
+              <p> </p>
+               <li> Carry a raincoat, umbrella, and sunscreen.  </li>
+              <p></p>
+               <li>  Wear comfortable shoes and clothing. </li>
+               <p></p>
+               <li> Be careful of slippery rocks.  </li>
+               <p></p>
+               <li> Do not swim in the waterfalls during the monsoon season, as the currents can be strong.  </li>
+               
+            </ul>
+            </div>
+    </div>
+
+
+        <div class="flex-container">
+            <!-- Location container -->
+            <div class="map-container center-location-container container">
+                <h2>Location</h2>
+                <p>   Tamhini Ghat Road, Mulashi, Maharashtra  </p>
+
+                <!-- Embed the map here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30279.38483043747!2d73.40251760000005!3d18.4418002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be821d8ee4f9b95%3A0x6c5908046185ded7!2sTamhini%20Waterfall!5e0!3m2!1sen!2sin!4v1697703337839!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade          " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+<div>
+
+
+<h2> Nearby places you must visit</h2>
+
+ <div class="nearby-places">
+            <!-- Nearby Places containers -->
+            <div class="nearby-places-container container">
+                <img src=" https://2.bp.blogspot.com/-Ku7rGqUMRcE/UhstllkvhJI/AAAAAAAADac/yZwU9gBbtcs/s1600/bhimashankar.jpg " alt="Tamhini Ghat"  class="nearbyplaces-image">
+                <h2>Bhimashankar Temple  </h2>
+                <p>  Bhimashankar Temple is one of the 12 Jyotirlinga temples of Lord Shiva. It's located in the Sahyadri Range and is an important religious site. </p>
+                <h3> Main Features </h3>
+    <ul>
+        <li> The temple is one of the twelve Jyotirlinga temples in India, which are considered to be the most sacred Hindu pilgrimage sites. </li>
+        <li> The temple is dedicated to Lord Shiva </li>
+        <li>  The temple is believed to be over 1,000 years old</li>
+        <li>The temple is built in the Nagara style, which is characterized by its tall shikhara (spire) and intricate carvings.  </li>
+       
+    </ul>
+
+    <a href=".html"><button>Read More</button></a>
+
+  </div>
+
+  <div class="nearby-places-container container">
+    <img src="https://curlytales.com/wp-content/uploads/2017/10/Devkund.png" alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2> Devkund Waterfall </h2>
+    <p> Devkund Waterfall is a stunning natural waterfall located near Tamhini Ghat. It's a popular trekking destination and a great place to cool off in the clear waters.  </p>
+    <h3> Facts about Waterfall  </h3>
+<ul>
+<li>The waterfall is approximately 2700 feet high.  </li>
+<li> The waterfall is located in a dense forest, and it takes about a 3-hour trek to reach. </li>
+<li>  There is a natural pool at the base of the waterfall, which is a popular spot for swimming.</li>
+<li>  Devkund Waterfall is a popular destination for birdwatching.</li>
+
+</ul>
+
+<a href="1devkund.html"><button>Read More</button></a>
+
+</div>
+
+<div class="nearby-places-container container">
+    <img src="https://www.holidify.com/images/cmsuploads/compressed/12304099_1642790995943259_6023567250266957123_o_20171023185134.jpg  " alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2> Tikona Fort </h2>
+    <p>  Tikona Fort, also known as Vitangad, is a historic hill fort near Kamshet. It offers panoramic views of the surrounding countryside and is a popular trekking destination. </p>
+    <h3> Key Features </h3>
+<ul>
+<li> Triangular shape </li>
+<li>  Stunning views of the surrounding countryside</li>
+<li> Historical structures, including a temple, a water tank, and a granary </li>
+<li>  Relatively easy trek</li>
+<li> Easy accessibility </li>
+</ul>
+
+<a href=".html"><button>Read More</button></a>
+
+</div>
+
+<div class="nearby-places-container container">
+    <img src=" https://im.whatshot.in/img/2020/Oct/mulshi-lake-flickr-cropped-1598860618-1604140473.jpg " alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2>Mulshi Lake  </h2>
+    <p> Mulshi Lake is a serene reservoir located near Tamhini Ghat. It's a popular spot for picnics, nature walks, and bird watching.  </p>
+    <h3>Main Features  </h3>
+<ul>
+<li>Mulshi Lake offers a variety of activities for visitors, like boating, fishing, swimming, birdwatching, and trekking.  </li>
+<li> Mulshi Lake is easily accessible by road from Pune . </li>
+<li> Mulshi Lake is surrounded by lush greenery and cascading waterfalls, making it a beautiful  spot. </li>
+<li>  There are a number of resorts and homestays located in the vicinity of the lake, offering accommodation and other facilities to tourists. </li>
+
+</ul>
+
+<a href=".html"><button>Read More</button></a>
+
+</div>
+
+</div> 
+
+<div>
+    <h2>Nearby Hotels</h2>
+    
+    <!-- Flex container for arranging hotels in a row -->
+    <div class="hotel-row">
+        <!-- Hotel 1 -->
+        <div class="hotel-container">
+            <img src="  https://pix8.agoda.net/hotelImages/31485824/0/7fc9c65b83dd2e13f09297ea5b264faf.jpg?ca=29&ce=0&s=1024x768    " alt="Hotel " class="hotel-image">
+            <h2>  Waterfront Resort  </h2>
+            <p>Address:  Plot No. 1, Vaduste 412108 India  </p>
+            <p>    4 Attractions within 10 km   </p>  
+            <p>Price: From Rs 2,459 </p>
+
+            <a href="   https://www.tripadvisor.in/Hotel_Review-g23618852-d23618675-Reviews-The_Waterfront_Resort-Vaduste_Pune_District_Maharashtra.html     " class="more-details-button">Click Here for More Details</a>
+        </div>
+
+        <div class="hotel-container">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/286615894.jpg?k=f5762c5397a6cf840c4d7d6861aa205bf21e38e8aa7d7388706c643d39b43aa3&o=&hp=1" alt="Hotel " class="hotel-image">
+            <h2>Encore A Boutique Resort</h2>
+            <p>Address: Tamhini Ghat Road, Varak 412108 India</p>
+            <p>7 Attractionswithin 10 km   </p>  
+            <p>Price: From Rs 5,823</p>
+
+            <a href="https://www.tripadvisor.in/Hotel_Review-g21416917-d21338520-Reviews-Encore_A_Boutique_Resort-Varak_Pune_District_Maharashtra.html" class="more-details-button">Click Here for More Details</a>
+        </div>
+
+
+        <!-- Hotel 3 -->
+        <div class="hotel-container">
+            <img src="  https://www.forbesindia.com/fbimages/900x600/proportional/jpeg/media/images/2016/Oct/topimg_32767_mangotreevilla.jpg    " alt="Hotel " class="hotel-image">
+            <h2>  Atmantan Wellness Resort    </h2>
+            <p>Address:
+                Palse Vasti, Mulshi Taluka, Pune 412108 India    </p>
+            <p>   6  Attractions within 10 km   </p>  
+            <p>Price: From Rs  5,000</p>
+
+            <a href="  https://www.tripadvisor.in/Hotel_Review-g297654-d5109414-Reviews-Atmantan_Wellness_Resort-Pune_Pune_District_Maharashtra.html      " class="more-details-button">Click Here for More Details</a>
+        </div>
+    </div>
+
+</div>  
+    </main>
+
+    <footer> 
+        <div class="foot-panel">
+           
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <h3>Accommodations</h3>
+    
+    <a>Hotels<br>
+    Resorts<br>
+    Hostels<br>
+    Vacation Rentals<br>
+    Camping Sites<br>
+    Bed and Breakfast<br>
+    Flight Booking<br>
+    Airlines<br>
+    Airport Information<br>
+    Flight Status<br>
+    Baggage Guidelines<br>
+    Frequent Flyer Programs</a>
+            </ul>
+            <ul>
+                <h3>Travel Guides</h3>
+    
+    <a>Travel Tips<br>
+    Packing Lists<br>
+    Visa and Passport Information<br>
+    Travel Insurance<br>
+    Local Etiquette<br>
+    Cultural Insights<br>
+    Sightseeing<br>
+    Outdoor Adventures<br>
+    Cultural Experiences<br>
+    Food and Dining<br>
+    Shopping<br>
+    Nightlife</a>
+            </ul>
+            <ul>
+                <h3>About Us</h3>
+                <a>Company Information<br>
+                Our Team<br>
+                Mission and Values<br>
+                Testimonials<br>
+                Contact Information<br>
+                Careers<br>
+                FAQs<br>
+                Contact Us<br>
+                Booking Assistance<br>
+                Cancelation Policy<br>
+                Travel Alerts<br>
+                Feedback</a>
+            </ul>
+            <ul>
+                <h3>Social Media</h3>
+                <a>Facebook
+                    <br>
+                    Twitter
+                    <br>
+                    Instagram<br>
+                    Pinterest<br>
+                    YouTube<br>
+                    Blog Subscription<br>
+                    Travel Advisories<br>
+                    Health and Vaccination<br>
+                    Safety Tips<br>
+                    Emergency Contacts<br>
+                    Travel Insurance</a>
+    
+            </ul>
+        </div>
+        
+       
+        </footer>
+
+        <div class="separate-container">
+            <h3>Follow Us on Social Media</h3>
+    
+            <!-- Social media icons within separate container -->
+            <div class="social-icons-container">
+                <a class="social-icon-link facebook" href="https://www.facebook.com/ExploreMaharashtraWebsite?mibextid=ZbWKwL " target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon-link twitter" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08 " target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon-link instagram" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-icon-link linkedin" href="https://www.linkedin.com/in/explore-maharashtra-c9-aa2729294/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social-icon-link youtube" href="https://www.youtube.com" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <!-- End of social media icons within a separate container -->
+    
+            <!-- Rest of your content goes here -->
+    
+            <p>Stay connected with us on social media for updates and more!</p>
+    
+            <!-- Phone number and address -->
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: VIT Pune, IT Department, SY-C-Group No.15, Pune, India</p>
+            </div>
+            <!-- End of phone number and address -->
+        </div>
+       
+    
+    </body>
+    
+    </html>
