@@ -1,0 +1,30 @@
+DELIMITER //
+
+CREATE PROCEDURE GetCombinedFlightData()
+BEGIN
+    SELECT 
+        c.fname, c.mname, c.lname, c.gender, c.email, c.phone, c.Cus_city, 
+        fb.fsname, fb.fdname, fb.fphone, 
+        tr.feedbk, tr.rating, tr.rtype, tr.rstatus 
+    FROM 
+        customer1 AS c 
+    INNER JOIN 
+        bookingflight AS fb ON c.cus_id = fb.flight_id 
+    LEFT JOIN 
+        transportationreviewss AS tr ON fb.flight_id = tr.cus_id;
+END//
+
+DELIMITER ;
+
+
+
+
+DELIMITER //
+
+CREATE TRIGGER UpdateReviewStatus AFTER INSERT ON transportationreviewss
+FOR EACH ROW
+BEGIN
+    UPDATE bookingflight SET rstatus = NEW.rstatus WHERE flight_id = NEW.cus_id;
+END//
+
+DELIMITER ;
