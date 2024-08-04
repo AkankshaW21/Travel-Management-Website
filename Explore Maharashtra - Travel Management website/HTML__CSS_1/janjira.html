@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Jajira Fort</title>
+</head>
+<body>
+    <style>
+
+        /* Style for the navigation bar */
+nav {
+    background-color: #0c0505; /* Background color of the navigation bar */
+    color: white; /* Text color */
+    padding: 10px 0; /* Add padding to space out the links */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align the links horizontally */
+}
+
+.navbar li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between the links */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: rgb(231, 231, 231); /* Text color for links */
+    font-weight: bold; /* Bold text for links */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #ff6600; /* Change the color to your desired hover color */
+}
+
+           h2 {
+        margin-left: 50px;
+           }
+
+p {
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+
+
+
+
+
+        /* Reset default margin and padding */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Set background image and apply blur effect */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 550px; /* Set the desired height for the blurred background */
+            overflow: hidden;
+        }
+
+        .blur-background {
+            background-image: url('.vscode/Nagarkhana,_Raigad_Fort,_India (1).jpg');
+            height: 1200px;
+            width: 1500px;
+            filter: blur(50px); /* Adjust the blur intensity as needed */
+            position: absolute;
+            z-index: -1;
+        }
+
+        /* Style the overlay image */
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 38%; /* Adjust the left position to your desired spacing */
+            transform: translate(-50%, -50%);
+            width: 800px; /* Set the desired width for the overlay image */
+            height: 510px; /* Set the desired height for the overlay image */
+           
+        }
+
+        /* Create a new container on the right side */
+        .right-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px; /* Adjust the width of the right container as needed */
+            height:510px;
+            background-color: rgba(46, 45, 45, 0.7);
+             /* Background color for the right container */
+             margin-right: 200px;
+             border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+             margin-top: 16px;
+        }
+
+        .fort-text {
+            font-size: 36px;
+            font-weight: bold;
+           margin-top: 170px;
+           margin-left: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style for the location symbol */
+        .location-symbol {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            margin-left: 130px;
+        }
+
+        /* Style for the location text */
+        .location-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin-top: 10px;
+            margin-left: 90px;
+        }
+        /* Style for the weather/climate container */
+/* Style for the blurred background container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Set the desired height for the blurred background */
+    overflow: hidden;
+}
+
+.blur-background1 {
+    background-image: url('.vscode/depositphotos_471952152-stock-photo-abstract-painterly-dramatic-scenery-clouds.jpg');
+    height: 1200px;
+    width: 1500px;
+    filter: blur(15px); /* Adjust the blur intensity as needed */
+    position: absolute;
+    z-index: -1;
+}
+
+/* Style for the weather/climate container */
+.weather-container {
+    background-image: url('.vscode/depositphotos_471952152-stock-photo-abstract-painterly-dramatic-scenery-clouds.jpg'); /* Use the same background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 80px;
+    border-radius: 35px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Align text to the left */
+    font-family: Arial, sans-serif; /* Specify font family */
+}
+
+/* Style for the weather/climate headings */
+.weather-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #090707; /* Change text color to your preference */
+     /* Convert text to uppercase */
+}
+
+/* Style for the weather/climate content */
+.weather-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000; /* Change text color to your preference */
+}
+
+/* Style for h3 headings within the weather content */
+.weather-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0101; /* Change text color to your preference */
+}
+
+/* Style for paragraph text within the weather content */
+.weather-container p {
+    margin-bottom: 10px;
+}
+
+/* Style for the overall page background (optional) */
+body {
+    background-color: #f0f0f0; /* Change background color to your preference */
+    font-family: Arial, sans-serif; /* Specify font family */
+}
+
+
+
+
+
+.location-container {
+    background-color: white;
+    background-position: center;
+    padding: 20px;
+    height: 400px;
+    margin-top: 20px; /* Adjust margin-top for desired spacing */
+    margin-left: 150px;
+    margin-right: 600px; /* Adjust margin-right for desired spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+
+.location-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #090707; /* Change text color to your preference */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.location-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000; /* Change text color to your preference */
+}
+
+/* Style for h3 headings within the location content */
+.location-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0101; /* Change text color to your preference */
+}
+
+/* Style for paragraph text within the location content */
+.location-container p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.horizontal-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 130px;
+            margin-right: 80px;
+            height: 300px;
+            width: 1200px; /* Adjust the width to cover the page minus margins */
+            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+        }
+
+        /* Style for individual containers */
+        .container-item {
+            flex: 0 0 calc(33.3333% - 40px); /* Set the width for each container with margin */
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            /* Add margin to create space between containers */
+            
+            /* Add margin to create space between containers */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Style for the image in the container */
+        .container-image {
+           height: 85%; /* 75% of the container's height for the image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+        }
+
+
+        .container-heading a {
+            text-decoration: none; /* Remove the default underline */
+            color: #333; /* Set the text color to your preference */
+            cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+        }
+
+
+
+h3 {
+    margin-bottom: 5px;
+}
+
+
+        /* Additional styles for the second set of containers */
+        .second-set {
+            margin-top: 30px; /* Add margin to separate the sets of containers */
+        }
+
+
+        .additional-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px; /* Adjust margin-right for desired spacing */
+            height: 330px;
+            margin-left: 70px;
+            width: 1300px;
+            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+        }
+
+        /* Style for individual additional containers */
+        .additional-item {
+            flex: 0 0 calc(25% - 40px); /* Set the width for each container with margin */
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px; /* Add margin to create space between containers */
+            padding: 0px;
+        }
+
+        /* Style for the image in the additional container */
+        .additional-image {
+            height: 230px; /* 75% of the container's height for the image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+        }
+
+        /* Style for the content within the additional container */
+        .additional-content {
+            margin-top: 5px; /* Add space between the image and content */
+        }
+
+
+.h3 {
+    margin-top: 5px;
+}
+
+
+
+.footer {
+    margin-top:15px;
+    
+
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.85rem;
+}
+ .foot-panel2  {
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+ } 
+ ul {
+     margin-top: 20px ;
+ }
+ 
+  ul a {
+     display:block;
+     font-size: 3 rem;
+     margin-top: 10px;
+     color:#dddddd;
+  }
+ 
+  .foot-panel3 {
+         background-color: #222f3d;
+         color: white;
+         border-top:0.5px solid white;
+         height:70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+  }
+
+  .separate-container {
+            background-color: #607389;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .separate-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for social media icons within separate container */
+        .social-icons-container {
+            font-size: 34px;
+            
+        }
+        .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+
+.navbar li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between the links */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #000; /* Text color for links */
+    font-weight: bold; /* Bold text for links */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #ff6600; /* Change the color to your desired hover color */
+}
+
+
+/* Style for individual containers */
+
+
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+    #navbar a {
+    text-decoration: none;
+    color: #dfd3d3;
+    margin: 0 10px;
+    font-size: 18px;
+    display: flex; /* Add display: flex; to arrange text and icon vertically */
+    flex-direction: column; /* Arrange text and icon in a column layout */
+    align-items: center; /* Center content horizontally */
+}
+
+
+
+    </style>
+</body>
+
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+    
+    <div class="container">
+        <div class="blur-background"></div>
+        <img src="https://alibagtourism.com/wp-content/uploads/2023/02/Murud-Janjira-Fort.jpg" alt="Overlay Image" class="overlay-image">
+
+        <img src="https://alibagtourism.com/wp-content/uploads/2023/02/Murud-Janjira-Fort.jpg" alt="Overlay Image" 
+        class="blur-background">
+        <div class="right-container">
+            <div class="fort-text">Janjira Fort</div>
+            <div class="location-symbol">&#x1F4CD;</div>
+            <div class="location-text">Janjira, India</div>
+            <!-- Add content for the right container here -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="location-container">
+        <h2 class="location-heading"></h2>
+        <p class="weather-content">
+            <h3>Overview</h3>Murud-Janjira Fort is situated on an oval-shaped rock off the Arabian Sea coast near the port city of Murud, 165 km (103 mi) south of Mumbai. Janjira is considered one of the strongest coastal forts in India. The fort is approached by sailboats from Rajapuri jetty.
+        </p>
+        <br>
+    <p><h4>Location:Raigad district, Maharashtra, India 	 </p>
+    <br>
+    <p><h4>Best Time to Visite:October to March. </h4></p>
+    <br>
+    <p><h4>Entry Fee:Entry is Free<br>
+        you will need to buy tickets for the boat ride and pay for the parking, if there is a vehicle. Ticket prices vary from INR 20-50 to INR 100-300 for bigger boats and parking is INR 30.  </h4></p>
+    <br>
+    <p><h4>Timing:7:00 AM - 6:00 PM</h4></p>
+
+
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+
+    <h2>History</h2>
+    <p>
+        The Murud Janjira Fort(Murud Janjira Killa) located in the city of Murud, 165 km from Mumbai, is a unique specimen of India’s historical military engineering. This oval impregnable fort is surrounded by water from all sides or it can be said. This fort is built in the middle of the sea. This fort is one of the few forts in India that no ruler could win in history.
+    </p>
+    <p>
+        Friends Chhatrapati Shivaji Maharaj had also made efforts to win this Murud JanjiraFort, but he too was not successful in winning it. After him, Sambhaji Maharaj attacked this fort, but he too failed to win it. Although Chhatrapati Sambhaji Maharaj was successful in making the way to this fort.
+
+        How Chhatrapati Sambhaji Maharaj made this impossible work possible. Before knowing the answer to this question, let us know that the word Janjira is an aberration of the Arabic word Jazeera. This fort was built in the Arabian Sea by a Koli king in the late 1200s to deal with pirates. There is also a well in this fort which, despite being in the middle of the sea, is the source of freshwater for the people living here.
+        
+        You can reach this fort via the coastal village of Murud. The most special thing about this fort is that it is surrounded by water from all sides, hence it is also called Island Fort. This mighty coastal fort, situated 55 km from Alibaug in Maharashtra, is like no other in the whole of India.
+        
+        The Murud-Janjira Fort, built on a huge rock in the Arabian Sea, has withstood the test of time in history, thwarted and destroyed many powerful attacks to withstand them. This fort situated on the Konkan coast of Maharashtra used to be the capital of Jarira state history. Earlier this entire area was known as Janjira, but now only this fort is known as Janjira.
+    </p>
+    <p>
+        Janjira Fort was an important bastion of African principles that played an important role in the history of Mumbai in the late 17th century, which were known to have excellent sailors and merchants. When he came to India, he made this fort his home, and once settled here, he stayed here. After this, this fort became a symbol of his strength and prosperity in the future.
+
+Janjira fort’s history has a long. Attempts were made to conquer this fort many times by the rulers who ruled India, but all of them were unsuccessful. British, Portuguese, Chhatrapati Shivaji Maharaj, and Veer Sambhaji also made many attacks on this fort but they all failed to win it.
+
+The carvings on the main entrance of this fort depict six elephants all surrounded by a tiger. This carving of the main gate of the fort shows the bravery of centuries. It is said that there was a time when there were 500 cannons in this fort, which were used to protect the strength of this fort. Talking about the present time, today only selected cannons are left in this fort, but these selected cannons are also fully capable of showing their history.
+    </p>
+       <br>
+       <br>
+
+
+
+    <h2>Major Features</h2>
+<p>
+    <br>
+    1)Jajira Fort, also known as Zafarabad Fort, is a significant historical monument with several notable features that showcase its architectural and strategic importance. Here are the major features of Jajira Fort:
+<br>
+2)Location on an Island: The fort is located on an island in the Hooghly River, making it a unique and strategically advantageous structure. Its isolated position provided natural protection from potential invaders.
+<br>
+3)Impressive Architecture: Jajira Fort exhibits a blend of Mughal and Bengali architectural styles. It has sturdy walls and bastions, showcasing the architectural prowess of its time.
+<br>
+4)Water Gate: One of the most iconic features of the fort is its Water Gate, which allowed boats and ships to enter the fort directly. This gate facilitated trade and transportation during its heyday.
+<br>
+5)Moat and Drawbridge: Surrounding the fort is a wide moat that was filled with water from the Hooghly River. A drawbridge provided access to the fort, and it could be raised to control entry.
+Cannon Emplacements: The fort has several cannon emplacements along its walls, indicating its strategic role in defense during various historical periods.
+<br>
+6)Palace and Residences: Inside the fort, there are remnants of a palace and residential quarters. These structures provide insights into the lifestyle of the rulers and their families.
+<br>
+7)Historical Significance: Jajira Fort played a significant role in the history of Bengal, witnessing battles and political changes during the Mughal and British colonial periods.
+<br>
+8)Tourist Attraction: Today, the fort is a popular tourist attraction, drawing visitors interested in history and architecture. It offers a glimpse into the past and provides scenic views of the river and the surrounding landscape.
+<br>
+9)Museum: There is a small museum within the fort that houses artifacts, weapons, and historical items related to the fort's history and the region's past.
+<br>
+10)Natural Beauty: Besides its historical significance, Jajira Fort is set in a picturesque environment, surrounded by lush greenery and the tranquil waters of the Hooghly River.
+</p>
+<!-- Weather/Climate Container -->
+<div class="weather-container">
+    <h2 class="weather-heading">Weather/Climate</h2>
+    <p class="weather-content">
+    </p>
+    
+    <h3>Summer</h3>
+    <p>
+        Summer in Jajira Fort is typically hot and dry.
+Daytime temperatures during the summer months can soar, often reaching above 35°C (95°F) or even higher.
+The nights are relatively cooler, but it can still be warm and uncomfortable.
+It is advisable to wear light and breathable clothing, use sunscreen, and stay hydrated when visiting during this season.
+    </p>
+    
+    <h3>Monsoon</h3>
+    <p>
+        The monsoon season brings relief from the scorching summer heat but also brings heavy rainfall.
+Jajira Fort experiences significant rainfall during the monsoon, with the highest precipitation occurring in July and August.
+The humidity levels are high during this season, and the region can be prone to flooding due to the river's proximity.
+Visitors should be prepared for rain and consider carrying rain gear when exploring the fort in the monsoon.
+    </p>
+   
+    <h3>Winter</h3>
+    <p>
+
+        Winter in Jajira Fort is characterized by cooler and more pleasant weather.
+Daytime temperatures during this season typically range from 10°C to 20°C (50°F to 68°F), making it a comfortable time to visit.
+Nights can be quite chilly, with temperatures sometimes dropping to single digits.
+The winter months are the best time to explore the fort and its surroundings, as the weather is conducive to outdoor activities.
+    </p>
+
+</div>
+<br>
+<br>
+<br>
+<h2>Janjira Fort Historical Marvels</h2>
+<br>
+<div class="horizontal-container">
+    <!-- Container 1 -->
+    <div class="container-item">
+        <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Janjira-fort-gate-tiger-elephant.jpg/330px-Janjira-fort-gate-tiger-elephant.jpg"alt="image"
+        class="container-image"
+        width="360" 
+         height="300" >
+      
+        <div class="container-text">
+            <h3 class="container-heading"><a href="takmak tok.html">The sculpture on the main gate</a></h3>
+           
+        </div>
+    </div>
+    <!-- Container 2 -->
+    <div class="container-item">
+        <img src ="https://thumbs.dreamstime.com/b/inside-murud-janjira-fort-ancient-near-mumbai-established-th-century-46501865.jpg"alt="image"
+        class="container-image"
+        width="360" 
+         height="300" >
+
+        <div class="container-text">
+            <h3 class="container-heading"><a href="jadadishwar temple.html">Inside the fort</a></h3>
+            
+        </div>
+    </div>
+    <!-- Container 3 -->
+    <div class="container-item">
+        <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Janjiraushnish2.jpg/330px-Janjiraushnish2.jpg"alt="image"
+        class="container-image"
+        width="360" 
+         height="300" >
+
+        
+        <div class="container-text">
+            <h3 class="container-heading"><a href="raj bhawan.html"></a>Janjira from the outside</h3>
+            
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<p1><h2>More Atrractions Near Jajira Fort </h2></p1>
+
+
+
+
+
+    <!-- Additional Containers -->
+    <div class="additional-container">
+        <!-- Additional Container 1 -->
+        <div class="additional-item">
+            <img src="https://cdn1.goibibo.com/voy_ing/t_g/8cb70ff0636411ed8ec80a58a9feac02.jpg"
+         alt="Resorts"
+         class="additional-image"
+         width="300" 
+         height="300" >
+            <div class="additional-content">
+                <h3 class="container-heading"><a href="resort.html">Resorts</a></h3>
+                
+            </div>
+        </div>
+        <!-- Additional Container 2 -->
+        <div class="additional-item">
+            <img src="https://cdn1.goibibo.com/voy_ing/t_g/3264013ef25f11e5abff0022195573b9.jpg"
+                 alt="Hotels"
+                 class="additional-image"
+                 width="300" 
+                 height="300" 
+            >
+            <div class="additional-content">
+                <h3>Hotels</h3>
+            </div>
+        </div>
+        
+        <!-- Additional Container 3 -->
+        
+        <!-- Additional Container 4 -->
+        <div class="additional-item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/06/36/9a/img-20161211-wa0032-largejpg.jpg"
+            alt="Near places"
+            class="additional-image"
+            width="300" 
+            height="300" 
+       >
+            <div class="additional-content">
+                <h3>Near places</h3>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Your other content here -->
+
+  
+
+    <footer> 
+        <div class="foot-panel">
+           
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <h3>Accommodations</h3>
+    
+    <a>Hotels<br>
+    Resorts<br>
+    Hostels<br>
+    Vacation Rentals<br>
+    Camping Sites<br>
+    Bed and Breakfast<br>
+    Flight Booking<br>
+    Airlines<br>
+    Airport Information<br>
+    Flight Status<br>
+    Baggage Guidelines<br>
+    Frequent Flyer Programs</a>
+            </ul>
+            <ul>
+                <h3>Travel Guides</h3>
+    
+    <a>Travel Tips<br>
+    Packing Lists<br>
+    Visa and Passport Information<br>
+    Travel Insurance<br>
+    Local Etiquette<br>
+    Cultural Insights<br>
+    Sightseeing<br>
+    Outdoor Adventures<br>
+    Cultural Experiences<br>
+    Food and Dining<br>
+    Shopping<br>
+    Nightlife</a>
+            </ul>
+            <ul>
+                <h3>About Us</h3>
+                <a>Company Information<br>
+                Our Team<br>
+                Mission and Values<br>
+                Testimonials<br>
+                Contact Information<br>
+                Careers<br>
+                FAQs<br>
+                Contact Us<br>
+                Booking Assistance<br>
+                Cancelation Policy<br>
+                Travel Alerts<br>
+                Feedback</a>
+            </ul>
+            <ul>
+                <h3>Social Media</h3>
+                <a>Facebook
+                    <br>
+                    Twitter
+                    <br>
+                    Instagram<br>
+                    Pinterest<br>
+                    YouTube<br>
+                    Blog Subscription<br>
+                    Travel Advisories<br>
+                    Health and Vaccination<br>
+                    Safety Tips<br>
+                    Emergency Contacts<br>
+                    Travel Insurance</a>
+    
+            </ul>
+        </div>
+        
+       
+        </footer>
+
+        <div class="separate-container">
+            <h3>Follow Us on Social Media</h3>
+    
+            <!-- Social media icons within separate container -->
+            <div class="social-icons-container">
+                <a class="social-icon-link facebook" href="https://www.facebook.com/ExploreMaharashtraWebsite?mibextid=ZbWKwL " target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon-link twitter" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08 " target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon-link instagram" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-icon-link linkedin" href="https://www.linkedin.com/in/explore-maharashtra-c9-aa2729294/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social-icon-link youtube" href="https://www.youtube.com" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <!-- End of social media icons within a separate container -->
+    
+            <!-- Rest of your content goes here -->
+    
+            <p>Stay connected with us on social media for updates and more!</p>
+    
+            <!-- Phone number and address -->
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: VIT Pune, IT Department, SY-C-Group No.15, Pune, India</p>
+            </div>
+            <!-- End of phone number and address -->
+        </div>
+       
+    
+    </body>
+    
+    </html>

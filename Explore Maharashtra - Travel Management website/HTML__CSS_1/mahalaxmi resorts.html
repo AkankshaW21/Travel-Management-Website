@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Containers</title>
+    <style>
+.additional-container {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px; /* Adjust margin-right for desired spacing */
+   /* height: 320px;
+    width: 1300px;*/
+    margin-left: 70px;
+    margin-bottom: 30px; /* Add margin to create space between this container and other content */
+}
+
+/* Style for individual additional containers */
+.additional-item {
+    height: 600px;
+    width: calc(25% - 20px); /* Calculate the width for each container with margin */
+    flex: 0 0 450px; /* Set the width for each container without margin */
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to create space between containers */
+    padding: 0px;
+}
+
+/* Style for the image in the additional container */
+.additional-image {
+    height: 250px; /* 75% of the container's height for the image */
+    width:430px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Rounded corners only at the top */
+}
+
+/* Style for the content within the additional container */
+.additional-content {
+    margin-top: 5px; /* Add space between the image and content */
+    padding: 0px;
+}
+
+
+.h3 {
+margin-top: 5px;
+}
+p{
+margin-left: 25px;
+margin-right: 25px;
+
+}
+.review-box {
+    background-color: green;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    width: 60px; /* Adjust the width as needed */
+    height: 20px;
+    margin-left: 180px; /* Center the box horizontally */
+    border-radius: 10px;
+}
+
+.rating {
+    font-size: 15px;
+    font-weight: bold;   
+    }
+    .location-rating-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 10px;/* Align items vertically in the center */
+  }
+
+  /* Style for the location symbol */
+  .location-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+     /* Adjust the margin as needed */
+  }
+  
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+   
+
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-content"> 
+            <h3>Sayaji Kolhapur</h3>
+        </div>
+        <img class="additional-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrIR_D0FRVzmlQFbQByDCBQMetGU2XhKhLmA&usqp=CAU">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+                <div class="location-icon">
+                  <i class='fas fa-map-marker-alt'></i>
+                </div>
+                <h6> Kawala Naka,Kolhapur</h6>
+                <div class="review-box">
+                    <div class="rating">8.6/10</div>
+                  </div>
+              </div>
+              <p>Offering a fitness centre and 2 dining options, Sayaji Hotel is located in Kolhāpur. The Kolhapur Central Bus Station and the Kolhapur Railway Station are within 2 km.
+                Top Facilities:Room Service,24-Hour Front Desk,Terrace,Non-Smoking Rooms,Airport Shuttle,Business Centre, Laundry,Dry Cleaning,Facilities For Disabled Guests, Family Rooms,Ironing Service,Lift,Safety Deposit Box,Soundproof Rooms,Packed Lunches,Car Hire
+              </p>
+              <h5 style="color: lightslategray; margin-right: 200px;">5 star resort with 10 room options</h5>
+            </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-content">
+            <h3>Veeksar The Fern An Ecotel </h3>
+        </div>
+        <img class="additional-image" src="https://imgcld.yatra.com/ytimages/image/upload/t_h…p/v7314023155/Hotel/00177138/Fern_Club_42I51C.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+            <div class="location-info">
+                <i class='fas fa-map-marker-alt'></i>
+            </div>
+                  <h6>Opp shahu Market Yard Kolhapur </h6>
+            
+            <div class="review-box">
+                <div class="rating">6.6/10</div>
+            </div>
+        </div>
+            
+            <p>Located in Kolhapur, 3.6 km from Kolhapur Railway Station, Veeksar The Fern An Ecotel Hotel Kolhapur provides accommodation with a garden, free private parking, a terrace and a restaurant.
+                Top Facilities:Restaurant, Room Service, Meeting/Banquet Facilities, 24-Hour Front Desk, Garden, Terrace,Lift,Safety Deposit Box,Soundproof Rooms,Packed Lunches,Car Hire
+            </p>
+            
+            <h5 style="color: lightslategray; margin-right: 200px;">5-star resort with 2 room options</h5>
+        </div>
+    </div>
+</div>
+<!--container 3 & 4-->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-content"> 
+            <h3>Hotel Grand Indu, 3 Star Kolhapur</h3>
+        </div>
+        <img class="additional-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPRV4HV2vyOGLkN-bDrkvqb_RUdwdHmkgjpg&usqp=CAU">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+                <div class="location-icon">
+                  <i class='fas fa-map-marker-alt'></i>
+                </div>
+                <h6>RAM NAGAR KARVIR KOLHAPUR </h6>
+                <div class="review-box">
+                    <div class="rating">8.5/10</div>
+                  </div>
+              </div>
+              <p>Located in Kolhapur, 9.1 km from Kolhapur Railway Station, Hotel Grand Indu, 3 Star Kolhapur provides accommodation with a garden, free private parking and a bar. With free WiFi, this 3-star hotel offers room service and a 24-hour front desk.
+                Top Facilities:Restaurant, Room Service, Meeting/Banquet Facilities, 24-Hour Front Desk, Garden, Terrace,Lift,Safety Deposit Box,Soundproof Rooms,Packed Lunches,Car Hire
+            </p>
+              <h5 style="color: lightslategray; margin-right: 200px;">Resort with 2 room options</h5>
+            </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-content">
+            <h3>Serenity Resort Panhala</h3>
+        </div>
+        <img class="additional-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq8aaz6_5jminXmIkeuELG2lfby-6mhNONfQ&usqp=CAU
+        ">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+            <div class="location-info">
+                <i class='fas fa-map-marker-alt'></i>
+            </div>
+                  <h6>2 kms from Panhala Fort</h6>
+            
+            <div class="review-box">
+                <div class="rating">8.3/10</div>
+            </div>
+        </div>
+            
+            <p>Offering a charming 3,000-square-feet manicured lawn with pretty fairy lights and gazebos for birthday parties and small soirées, this idyllic hilltop resort beckons you to the beautifully landscaped Western Ghats. This nature resort operates with four exclusive, plush rooms boasting of double beds, wardrobes, private gardens with bonfire pits and patios. You can also relish authentic Kolhapuri cuisines at their restaurant.
+
+
+            </p>
+            
+            <h5 style="color: lightslategray; margin-right: 200px;"> Resort with 5 room options</h5>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Containers</title>
+    <style>
+.additional-container {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px; /* Adjust margin-right for desired spacing */
+   /* height: 320px;
+    width: 1300px;*/
+    margin-left: 70px;
+    margin-bottom: 30px; /* Add margin to create space between this container and other content */
+}
+
+/* Style for individual additional containers */
+.additional-item {
+    height: 600px;
+    width: calc(25% - 20px); /* Calculate the width for each container with margin */
+    flex: 0 0 450px; /* Set the width for each container without margin */
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to create space between containers */
+    padding: 0px;
+}
+
+/* Style for the image in the additional container */
+.additional-image {
+    height: 250px; /* 75% of the container's height for the image */
+    width:430px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Rounded corners only at the top */
+}
+
+/* Style for the content within the additional container */
+.additional-content {
+    margin-top: 5px; /* Add space between the image and content */
+    padding: 0px;
+}
+
+
+.h3 {
+margin-top: 5px;
+}
+p{
+margin-left: 25px;
+margin-right: 25px;
+
+}
+.review-box {
+    background-color: green;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    width: 60px; /* Adjust the width as needed */
+    height: 20px;
+    margin-left: 180px; /* Center the box horizontally */
+    border-radius: 10px;
+}
+
+.rating {
+    font-size: 15px;
+    font-weight: bold;   
+    }
+    .location-rating-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 10px;/* Align items vertically in the center */
+  }
+
+  /* Style for the location symbol */
+  .location-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+     /* Adjust the margin as needed */
+  }
+  
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 19.4px;
+    font-weight: lighter;    }
+    
+   
+
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-content"> 
+            <h3>Cocoon Hotel</h3>
+        </div>
+        <img class="additional-image" src="https://imgcld.yatra.com/ytimages/image/upload/t_s…_40_f_jpg/v8018520385/Hotel/00009096/4_xjgRqp.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+                <div class="location-icon">
+                  <i class='fas fa-map-marker-alt'></i>
+                </div>
+                <h6>3.4 km from Dagadusheth Ganapati Temple</h6>
+                <div class="review-box">
+                    <div class="rating">7.4/10</div>
+                  </div>
+              </div>
+              <p>Rooms at Cocoon Hotel offer a flat screen TV, air conditioning, and a minibar providing exceptional comfort and convenience, and guests can go online with free wifi.
+                24 hour front desk, room service, and a concierge are some of the conveniences offered at this hotel. Free breakfast will also help to make your stay even more special
+              </p>
+              <h5 style="color: lightslategray; margin-right: 200px;">5 star resort with 10 room options</h5>
+            </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-content">
+            <h3>The Corinthians Resort & Club</h3>
+        </div>
+        <img class="additional-image" src="https://www.thecorinthianspune.com/blog/wp-content/uploads/2019/12/3002.jpeg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+            <div class="location-info">
+                <i class='fas fa-map-marker-alt'></i>
+            </div>
+                  <h6>5.7 km from Dagadusheth Ganapati Temple</h6>
+            
+            <div class="review-box">
+                <div class="rating">7.8/10</div>
+            </div>
+        </div>
+            
+            <p>The Corinthians is a five-star hotel located in the verdant hilltop of South Pune. Well-appointed Rooms, Executive and Presidential Suites designed in Moroccan architecture, The Corinthians Boutique Hotel reflects the glory of a bygone era, re-created with all minute details, providing all the modern amenities that the business traveler would wish to have.  
+            </p>
+            
+            <h5 style="color: lightslategray; margin-right: 200px;">5-star resort with 2 room options</h5>
+        </div>
+    </div>
+</div>
+<!--container 3 & 4-->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-content"> 
+            <h3>Bloom Hotel</h3>
+        </div>
+        <img class="additional-image" src="https://d1ha4q9jvugw4k.cloudfront.net/public_media/hotel_images/Pune/bloom-hotel-magarpatta/P8.jpg
+        ">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+                <div class="location-icon">
+                  <i class='fas fa-map-marker-alt'></i>
+                </div>
+                <h6>3.2 km from Dagadusheth Ganapati Temple</h6>
+                <div class="review-box">
+                    <div class="rating">8.2/10</div>
+                  </div>
+              </div>
+              <p>Located in the smart city of Pune, Bloom Hotel - Magarpatta is a unique hotel equipped with smart amenities. The hotel features spacious, well-equipped rooms, divided into three categories; Standard King, Standard Queen and Standard Twin. The rooms are minimalistic, with a city-facing window.
+                During your stay at Bloom Hotels in Magarpatta, you can also grab quick bites at the snack bars in the lobby.
+            </p>
+              <h5 style="color: lightslategray; margin-right: 200px;">Resort with 2 room options</h5>
+            </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-content">
+            <h3>Phoenix Hotel</h3>
+        </div>
+        <img class="additional-image" src="https://phoenixhotelpune.in/wp-content/uploads/2022/02/ANK483_2917a_LR.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+            <div class="location-info">
+                <i class='fas fa-map-marker-alt'></i>
+            </div>
+                  <h6>6.7 km from Dagadusheth Ganapati Temple</h6>
+            
+            <div class="review-box">
+                <div class="rating">9.0/10</div>
+            </div>
+        </div>
+            
+            <p>Wake up to the chirping of birds and see the rising sun on the horizon along with the greenery scattered all around you. A sudden gush of cool breeze freshens up your morning. That's the beauty of this beautiful business hotel which is an astonishingly welcome experience. 
+            </p>
+            
+            <h5 style="color: lightslategray; margin-right: 200px;"> Resort with 5 room options</h5>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

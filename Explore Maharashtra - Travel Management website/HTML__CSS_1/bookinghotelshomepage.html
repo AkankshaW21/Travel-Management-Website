@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+   
+
+.imgslider {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /* Allows positioning of child elements */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeImage 55cos linear infinite;
+}
+
+.slider-content {
+    position: absolute;
+    top: 40%; /* Center the content vertically */
+    left: 48%; /* Center the content horizontally */
+    transform: translate(-50%, -50%); /* Center the content precisely */
+    text-align: center;
+    color: #1e1111; /* Text color */
+    padding: 20px; /* Add padding for better readability */
+}
+
+.slider-content h1 {
+    font-size: 50px; /* Adjust heading font size */
+    margin-bottom: 10px; /* Space between heading and paragraph */
+}
+
+.slider-content p {
+    font-size: 21px; /* Adjust paragraph font size */
+  
+}
+
+        
+        
+       
+
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 19.4px;
+    font-weight: lighter;    }
+    
+   
+
+.horizontal-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 130px;
+            margin-right: 80px;
+            height: 450px;
+            width: 1200px; /* Adjust the width to cover the page minus margins */
+            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+        }
+
+        /* Style for individual containers */
+        .container-item {
+            flex: 0 0 calc(33.3333% - 40px); /* Set the width for each container with margin */
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            /* Add margin to create space between containers */
+            
+            /* Add margin to create space between containers */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Style for the image in the container */
+        .container-image {
+           height: 85%; /* 75% of the container's height for the image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+        }
+
+
+        .container-heading a {
+            text-decoration: none; /* Remove the default underline */
+            color: #333; /* Set the text color to your preference */
+            cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+        }
+
+.additional-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px; /* Adjust margin-right for desired spacing */
+            height: 395px;
+            margin-left: 70px;
+            width: 1300px;
+            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+
+        }
+        
+@keyframes moveRightToLeft {
+    0% {
+        margin-left: 100%; /* Start from the right edge */
+    }
+    100% {
+        margin-left: -100%; /* Move to the left edge */
+    }
+}
+
+        /* Style for individual additional containers */
+        .additional-item {
+            flex: 0 0 calc(25% - 40px); /* Set the width for each container with margin */
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 5px; /* Add margin to create space between containers */
+            padding: 0px;
+        }
+
+        /* Style for the image in the additional container */
+        .additional-image {
+            height: 230px; /* 75% of the container's height for the image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+        }
+
+        /* Style for the content within the additional container */
+        .additional-content {
+            margin-top: 5px; /* Add space between the image and content */
+        }
+        h3 {
+      margin-left: 160px;
+      font-size: 22px;
+      margin-right: 90px;
+      font-style: normal;
+    }
+    h4 {
+        font-size: 17px;
+    }
+
+    .footer {
+    margin-top:15px;
+    
+
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.85rem;
+}
+ .foot-panel2  {
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+ } 
+ ul {
+     margin-top: 20px ;
+ }
+ 
+  ul a {
+     display:block;
+     font-size: 3 rem;
+     margin-top: 10px;
+     margin-left: 13px;
+     color:#dddddd:
+  }
+ 
+  .foot-panel3 {
+         background-color: #222f3d;
+         color: white;
+         border-top:0.5px solid white;
+         height:70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+  }
+
+  .separate-container {
+            background-color: #607389;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .separate-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for social media icons within separate container */
+        .social-icons-container {
+            font-size: 34px;
+        }
+/* Style for the navigation links */
+
+
+.social-icons-container .social-icon-link {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-right: 10px; /* Add margin between the icons */
+  text-decoration: none; /* Remove underlines from the links */
+  color: #3b5998; /* Facebook blue color */
+}
+
+.social-icons-container .social-icon-link.facebook:hover {
+  color: #4267B2; /* Facebook hover color */
+}
+
+.social-icons-container .social-icon-link.twitter {
+  color: #1DA1F2; /* Twitter blue color */
+}
+
+.social-icons-container .social-icon-link.twitter:hover {
+  color: #2795D9; /* Twitter hover color */
+}
+
+.social-icons-container .social-icon-link.instagram {
+  color: #E4405F; /* Instagram pink/red color */
+}
+
+.social-icons-container .social-icon-link.instagram:hover {
+  color: #C13584; /* Instagram hover color */
+}
+
+.social-icons-container .social-icon-link.linkedin {
+  color: #0A66C2; /* LinkedIn blue color */
+}
+
+.social-icons-container .social-icon-link.linkedin:hover {
+  color: #0073B2; /* LinkedIn hover color */
+}
+
+.social-icons-container .social-icon-link.youtube {
+  color: #FF0000; /* YouTube red color */
+}
+
+.social-icons-container .social-icon-link.youtube:hover {
+  color: #FF3333; /* YouTube hover color */
+}
+h6 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+ ul h5 {
+    font-size: 22px;
+    margin-left: 1px;
+}
+
+
+.additional-content {
+    position: relative;
+}
+.additional-content {
+    position: relative;
+}
+
+.buttons {
+    margin-top: 1px;
+}
+
+.info-button,
+.booking-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.info-button:hover,
+.booking-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+    </style>
+</body>
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+<h1>Pune</h1>
+    <!-- Additional Containers -->
+    <div class="additional-container">
+        <!-- Additional Container 1 -->
+        <div class="additional-item">
+            <div class="additional-image" style="background-image: url('https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_600,q_auto,w_600//hotelier-images/e4/36/ad01eeab4087b3e93c27aeed70dbe405ca00a7788b4181f6979e4db557fc.jpeg');">
+                <!-- Image -->
+            </div>
+            <div class="additional-content">
+                <h4 class="container-heading"><a href="">Hotel Girija(Near Shivneri)</a></h4>
+                <!-- Buttons -->
+                <form method="POST" action="shivneri fort hotels.php">
+					<input type="submit" name="shivneri" class="btn1" value="Info">
+				</form>
+
+                <form method="POST" action="Hotelbooking.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+            </div>
+        </div>
+        
+        <!-- Additional Container 2 -->
+        <div class="additional-item">
+            <div class="additional-image" style="background-image: url('https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg');">
+                <!-- Image -->
+            </div>
+            <div class="additional-content">
+                <h4 class="container-heading"><a href="">Hotel Aryaa Regency(Near Shivneri)</a></h4>
+                <!-- Buttons -->
+                <form method="POST" action="shivneri fort hotels.php">
+					<input type="submit" name="shivneri" class="btn1" value="Info">
+				</form>
+
+                <form method="POST" action="Hotelbooking.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+            </div>
+        </div>
+        <!-- Additional Container 3 -->
+        <div class="additional-item">
+            <div class="additional-image" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/d3/b2/4f/exterior-view.jpg?w=1200&h=-1&s=1');">
+                <!-- Image -->
+            </div>
+            <div class="additional-content">
+                <h4 class="container-heading"><a href="">Hotel Tukson(Near Shivneri)</a></h4>
+                <!-- Buttons -->
+                <form method="POST" action="shivneri fort hotels.php">
+					<input type="submit" name="shivneri" class="btn1" value="Info">
+				</form>
+
+                <form method="POST" action="Hotelbooking.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+            </div>
+        </div>
+        <!-- Additional Container 4 -->
+        <div class="additional-item">
+            <div class="additional-image" style="background-image: url('https://cdn.luxuryhotel.world/file/hotcdn/hotel/cover-small/2451595_1565618756.jpg');">
+                <!-- Image -->
+            </div>
+            <div class="additional-content">
+                <h4 class="container-heading"><a href="">Hotel Sachin Executive(Near Shivneri)</a></h4>
+                <!-- Buttons -->
+                <form method="POST" action="shivneri fort hotels.php">
+					<input type="submit" name="shivneri" class="btn1" value="Info">
+				</form>
+
+                <form method="POST" action="Hotelbooking.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+            </div>
+        </div>
+    </div>
+
+
+   
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://pix10.agoda.net/hotelImages/116/1162129/1162129_16012913160039490156.jpg?ca=6&ce=1&s=702x392');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">The Hotel Hindusthan International(Near Sinhgad)</a></h4>
+            <!-- Buttons -->
+            <form method="POST" action="sinhgad fort hotels.php">
+                <input type="submit" name="sinhgad" class="btn1" value="Info">
+            </form>
+
+            <form method="POST" action="Hotelbooking.html">
+                <input type="submit" name="goa" class="btn1" value="Booking">
+            </form>
+        </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://pix10.agoda.net/hotelImages/116/1162129/1162129_18062614470066453979.jpg?ca=0&ce=1&s=702x392');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Four Points By Sheraton Hotel And Serviced Apartments(Near Sinhgad)</a></h4>
+            <!-- Buttons -->
+            <form method="POST" action="sinhgad fort hotels.php">
+                <input type="submit" name="sinhgad" class="btn1" value="Info">
+            </form>
+
+            <form method="POST" action="Hotelbooking.html">
+                <input type="submit" name="goa" class="btn1" value="Booking">
+            </form>
+        </div>
+    </div>
+    <!-- Additional Container 3 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://www.bharatonline.com/hotels/hotel_master_img/102_a.jpeg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Collection O Hotel Janjir Residency(Near Singhad)</a></h4>
+            <!-- Buttons -->
+            <form method="POST" action="sinhgad fort hotels.php">
+                <input type="submit" name="sinhgad" class="btn1" value="Info">
+            </form>
+
+            <form method="POST" action="Hotelbooking.html">
+                <input type="submit" name="goa" class="btn1" value="Booking">
+            </form>
+        </div>
+    </div>
+    <!-- Additional Container 4 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://www.tourmyindia.com/states/maharashtra/images/hotel-jp-international-aurangabad.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">SPOT ON Hotel Tushar Lodging(Near Singhad)</a></h4>
+            <!-- Buttons -->
+            <form method="POST" action="sinhgad fort hotels.php">
+                <input type="submit" name="sinhgad" class="btn1" value="Info">
+            </form>
+
+            <form method="POST" action="Hotelbooking.html">
+                <input type="submit" name="goa" class="btn1" value="Booking">
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://cf.bstatic.com/xdata/images/hotel/270x200/383933792.jpg?k=c159a83999767a8070acdc590b0eec84ede997280ef76cf6c3751b7fa20aa9c3&o=');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Lohono Stays | Villa Alborz(Near Lohagd)</a></h4>
+            <!-- Buttons -->
+            <form method="POST" action="Lohagad fort hotels.php">
+                <input type="submit" name="lohagad" class="btn1" value="Info">
+            </form>
+
+            <form method="POST" action="Hotelbooking.html">
+                <input type="submit" name="goa" class="btn1" value="Booking">
+            </form>
+        </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://www.dialupindia.com/dp-content/uploads/hotels/radisson-mumbai-hotel.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Misty Homestay (Near Lohagad)</a></h4>
+            <!-- Buttons -->
+            <form method="POST" action="Lohagad fort hotels.php">
+                <input type="submit" name="lohagad" class="btn1" value="Info">
+            </form>
+
+            <form method="POST" action="Hotelbooking.html">
+                <input type="submit" name="goa" class="btn1" value="Booking">
+            </form>
+        </div>
+    </div>
+    <!-- Additional Container 3 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/52/4c/9c/facade-evening.jpg?w=300&h=200&s=1');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Dream Villas Lonavala| Krishna 4 BHK Pool Villa(Near Lohagad)</a></h4>
+            <!-- Buttons -->
+            <form method="POST" action="Lohagad fort hotels.php">
+                <input type="submit" name="lohagad" class="btn1" value="Info">
+            </form>
+
+            <form method="POST" action="Hotelbooking.html">
+                <input type="submit" name="goa" class="btn1" value="Booking">
+            </form>
+        </div>
+    </div>
+    <!-- Additional Container 4 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaQIeSIfSotqc6Dky_-HpVLU8hLJdtGcUNMw2-hVi0nw&s');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Leisurely Stays Jazz by the Lake 2BHK Pawna Lake(Near Lohagad)</a></h4>
+            <!-- Buttons -->
+            <form method="POST" action="Lohagad fort hotels.php">
+                <input type="submit" name="lohagad" class="btn1" value="Info">
+            </form>
+
+            <form method="POST" action="Hotelbooking.html">
+                <input type="submit" name="goa" class="btn1" value="Booking">
+            </form>
+        </div>
+    </div>
+</div>
+
+<br>
+
+
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://im.whatshot.in/img/2018/Dec/jadhavgadh-cropped-2-1544003391.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Cocoon Hotel(Pune )</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="dagadushrt resort.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/52/ee/1d/sofitel-mumbai-bkc-a.jpg?w=1200&h=-1&s=1');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">The Corinthians Resort & Club(Pune)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="dagadushrt resort.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 3 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/2a/a9/1a/91/swimming-pool.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Ekaant The Retreat(Near Torana)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="Torna Fort hotels.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 4 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3168/x_0,y_188,w_5000,h_2813,r_0,c_crop,q_90,fl_progressive/w_500,f_auto,c_fit/lotus-eco-beach-resort-murud-beach-dapoli-district-ratnagiri/Swimming_pool_3_mmjjve');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Hotel Celebration Lavasa(Near Torana)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="Torna Fort hotels.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://q-xx.bstatic.com/xdata/images/hotel/max500/151398805.jpg?k=e9faf219279d7f3e90332b030ba0e8a547f2431d356f60478ba79aee109923fd&o=');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Saveda Farm & Cottages, Karjat(Near Bhimashankar)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="bhimashankar resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/7e/2a/56/fariyas-resort-lonavala.jpg?w=1200&h=-1&s=1');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Radisson Blu Resort & Spa Karjat(Near Bhimashankar)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="bhimashankar resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 3 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsHYAQYf9WOnWKkTzH7LfJhhb_11vxzsZy9IVKnKBcAgjbDdSAtSbJJCyp-yTxN9Ax5rY&usqp=CAU');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Livingstone Reflektion (Near Bhimashankar)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="bhimashankar resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 4 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/7b/57/27/taj-mahal-tower-mumbai.jpg?w=1200&h=-1&s=1');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Jakson Inns(Near KuneWaterfall)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="kune waterfall.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1>Mumbai</h1>
+
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/46/17/92/ravine-hotel.jpg?w=300&h=200&s=1');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Taj Lands End (Near Mumbai)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="maount marry carch resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://tourismnewslive.com/wp-content/uploads/2019/06/TFR-KARAD1.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Trident Bandra Kurla (Near Mumbai)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="maount marry carch resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 3 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0b/87/58/85/novotel-mumbai-juhu-beach.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Royal Tulip(Near Pavankada Falls)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="pandavkada.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 4 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/a8/e0/89/evershine-resort.jpg?w=1200&h=-1&s=1');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Abbott Hotel(Near Pavankada Falls)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="pandavkada.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h1>Kolhapur</h1>
+
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk0RsPgVraswJWeASvWmMGbXG1CIv1eWhgRo_xH1hgtQmYlEwbDUBkcmhSqYVIUn3EDiQ&usqp=CAU');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Sayaji Kolhapur(Near  Shri Mahalaxmi - Ambabai Temple)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="mahalaxmi resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://c.otcdn.com/imglib/hotelfotos/8/214/hotel-the-park-navi-mumbai-bombay-20231214041829613700.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Veeksar The Fern An Ecotel(Near Shri Mahalaxmi - Ambabai Temple)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="mahalaxmi resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 3 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://www.travenix.com/wp-content/uploads/2018/07/the-park.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Hotel Grand Indu, 3 Star Kolhapur( Kolhapur)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="mahalaxmi resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 4 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://curlytales.com/wp-content/uploads/2020/09/Mumbai-hotels.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Serenity Resort Panhala(Kolhapur)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="mahalaxmi resorts.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h1>Raigad</h1>
+
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwgBIUjaxhXHzzNgfuCgDfHK05Awm0pE3kQbX7iBv5jc9ETx1ewimBqOt9RDC3sihgKtc&usqp=CAU');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Hotel Visava Riverside(Near Raigad Fort)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="raigad hotels.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://www.holidify.com/images/cmsuploads/compressed/9727978d66230ad3654f56ca748ca956_20221124193512.jpg');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Portofino (Near Raigad Fort)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="raigad hotels.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 3 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://pix10.agoda.net/hotelImages/288480/-1/c5124039ae65459813b8421a7978457a.jpg?ca=8&ce=1&s=414x232');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">lavasa holiday home(raigad)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="raigad hotels.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+    <!-- Additional Container 4 -->
+    <div class="additional-item">
+        <div class="additional-image" style="background-image: url('https://www.livemint.com/lm-img/img/2023/06/06/1600x900/The-Fern-Hotels---Resorts--new-hotel-in-Maharashtr_1686042758156.png');">
+            <!-- Image -->
+        </div>
+        <div class="additional-content">
+            <h4 class="container-heading"><a href="">Encore A Boutique Resort(Near devkund waterfall)</a></h4>
+            <!-- Buttons -->
+            <div class="buttons">
+                <a href="devkund.html" class="info-button">Info</a>
+                <a href="Hotelbooking.html" class="booking-button">Booking</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<footer> 
+    <div class="foot-panel">
+       
+    </div>
+    <div class="foot-panel2">
+        <ul>
+   <h5>Accommodations</h5>
+
+<a>Hotels<br>
+Resorts<br>
+Hostels<br>
+Vacation Rentals<br>
+Camping Sites<br>
+Bed and Breakfast<br>
+Flight Booking<br>
+Airlines<br>
+Airport Information<br>
+Flight Status<br>
+Baggage Guidelines<br>
+Frequent Flyer Programs</a>
+        </ul>
+        <ul>
+            <h5>Travel Guides</h5>
+
+<a>Travel Tips<br>
+Packing Lists<br>
+Visa and Passport Information<br>
+Travel Insurance<br>
+Local Etiquette<br>
+Cultural Insights<br>
+Sightseeing<br>
+Outdoor Adventures<br>
+Cultural Experiences<br>
+Food and Dining<br>
+Shopping<br>
+Nightlife</a>
+        </ul>
+        <ul>
+            <h5>About Us</h5>
+            <a>Company Information<br>
+            Our Team<br>
+            Mission and Values<br>
+            Testimonials<br>
+            Contact Information<br>
+            Careers<br>
+            FAQs<br>
+            Contact Us<br>
+            Booking Assistance<br>
+            Cancelation Policy<br>
+            Travel Alerts<br>
+            Feedback</a>
+        </ul>
+        <ul>
+            <h5>Social Media</h5>
+            <a>Facebook
+                <br>
+                Twitter
+                <br>
+                Instagram<br>
+                Pinterest<br>
+                YouTube<br>
+                Blog Subscription<br>
+                Travel Advisories<br>
+                Health and Vaccination<br>
+                Safety Tips<br>
+                Emergency Contacts<br>
+                Travel Insurance</a>
+
+        </ul>
+    </div>
+    
+   
+    </footer>
+
+    <div class="separate-container">
+        <h3>Follow Us on Social Media</h3>
+
+        <!-- Social media icons within separate container -->
+        <div class="social-icons-container">
+            <a class="social-icon-link facebook" href="https://www.facebook.com/ExploreMaharashtraWebsite?mibextid=ZbWKwL " target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a class="social-icon-link twitter" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08 " target="_blank"><i
+                    class="fab fa-twitter"></i></a>
+            <a class="social-icon-link instagram" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="social-icon-link linkedin" href="https://www.linkedin.com/in/explore-maharashtra-c9-aa2729294/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a class="social-icon-link youtube" href="https://www.youtube.com" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+        <!-- End of social media icons within a separate container -->
+
+        <!-- Rest of your content goes here -->
+
+        <p>Stay connected with us on social media for updates and more!</p>
+
+        <!-- Phone number and address -->
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Address: VIT Pune, IT Department, SY-C-Group No.15, Pune, India</p>
+        </div>
+        <!-- End of phone number and address -->
+    </div>
+   
+
+</body>
+
+</html>

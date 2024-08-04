@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Patalganga Waterfall</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+        header {
+            background-size: cover;
+            height: 400px;
+            text-align: center;
+            color: rgb(26, 14, 14);
+            padding: 20px;
+        }
+
+
+
+
+        /* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the intro container */
+.intro-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Style the background image */
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+/* Add a semi-transparent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style the intro text */
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Style the CTA button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Style the scroll indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    margin-top: 10px;
+}
+
+
+
+
+
+
+        h1 {
+            margin-top: 80px;
+        }
+
+        .history-section {
+            background-color: #e5ebe5;
+            padding: 20px;
+           
+        }
+
+        /* Container styles */
+        .container {
+            margin: 10px;
+            padding: 20px;
+            color: #090000;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        /* Flex container for responsiveness */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        /* Header and Location styles */
+        .header-container {
+            flex-basis: 100%;
+            background-color: #c0dad8;
+            color: #ada8a8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Main content container styles */
+        .main-container {
+            flex-basis: calc(50% - 20px);
+            background-color: #ccd9d6;
+        }
+
+        /* Map container styles */
+        /* Map container styles */
+.map-container {
+    flex-basis: calc(50% - 20px);
+    background-color: #222929;
+    color: #fff;
+    margin: 10px auto; /* Center horizontally by adding 'auto' to left and right margins */
+    padding: 20px;
+    text-align: center; /* Center the content */
+}
+
+
+        /* Responsive CSS for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-basis: 80%;
+            }
+        }
+
+  /* Style for the Best Time to Visit container */
+/* Style for the Best Time to Visit container */
+.best-time-container {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Style for the Tips Before Visiting Waterfall container */
+.tips-container {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Style for the flex container to arrange items side by side */
+.flex-container {
+    display: flex;
+}
+
+
+        /* Nearby Places container styles */
+        .nearby-places-container {
+            flex-basis: calc(25% - 20px);
+            margin: 8px;
+            padding: 1px;
+            background-color: #d8e4e9;
+            color: #151313;
+        }
+
+        .nearbyplaces-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Center the Location container */
+        .center-location-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Flex container for the last 4 Nearby Places containers */
+        .nearby-places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+
+
+          /* CSS for the gallery container */
+            /* CSS for the gallery container */
+        .gallery-container {
+            max-width: 600px; /* Set a maximum width for the image gallery */
+            margin: 0 auto;  /* Add margin to create space between the two containers */
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .gallery {
+            display: inline-block;
+            transition: transform 1s ease-in-out;
+        }
+        
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+       
+
+
+/*hotel design */
+        .hotel-container {
+            width: 23%; /* Adjust the width as needed */
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #b1aaaa;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: #eceaea;
+        }
+
+        /* Flex container for arranging containers side by side */
+        .hotel-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Wrap to the next row if the screen is too narrow */
+        }
+        /* Style for hotel images */
+        .hotel-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+
+          /* Style for the "More Details" button */
+          .more-details-button {
+            background-color: #565b5b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .more-details-button:hover {
+            background-color: #1e7e7b;
+        }
+
+
+        
+  .footer {
+    margin-top:15px;
+    
+
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.85rem;
+}
+ .foot-panel2  {
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+ } 
+        .foot-panel3 {
+         background-color: #222f3d;
+         color: white;
+         border-top:0.5px solid white;
+         height:70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+  }
+  .separate-container {
+            background-color: #607389;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .separate-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for social media icons within separate container */
+        .social-icons-container {
+            font-size: 34px;
+            
+        }
+        p{
+            margin-left: 25px;
+            margin-right: 25px;
+            
+        }
+
+        #navbar a {
+    text-decoration: none;
+    color: #dfd3d3;
+    margin: 0 10px;
+    font-size: 18px;
+    display: flex; /* Add display: flex; to arrange text and icon vertically */
+    flex-direction: column; /* Arrange text and icon in a column layout */
+    align-items: center; /* Center content horizontally */
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+<div class="intro-container">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/25/37/d7/mvimg-20180811-164825.jpg?w=1200&h=1200&s=1" alt="Website Background Image" class="background-image">
+    <div class="overlay"></div>
+    <div class="intro-text">
+        <h1>Ashoka Waterfall</h1>
+        <h2></h2>
+       
+    </div>
+   
+</div>
+
+
+
+<main>
+    <section class="history-section container">
+        <h2>History</h2>
+    <p> Ashoka Waterfall, also known as Vihigaon Waterfall, is a popular tourist destination located in Vihigaon village, Thane district, Maharashtra, India.  </p>   
+    <p> It is a monsoon-fed waterfall, and the water cascades down from a height of about 120 feet into a pool. </p>   
+     <p> The waterfall is also believed to have a religious significance for Hindus. There is a small temple located near the waterfall, where visitors come to pray and seek blessings. It is believed that the water in the waterfall is sacred and has the power to cleanse the soul. </p>   
+
+    <p>The exact history of Ashoka Waterfall is unknown, but it is believed to be a popular spot for centuries. The waterfall is located in the Sahyadri mountain range, which has been inhabited by humans for thousands of years. It is possible that the waterfall was used by ancient civilizations for bathing, drinking, and irrigation  </p>   
+    </section>
+    <br>
+
+
+    <!-- Main Features container -->
+    <div class="main-container container">
+        <h2>Main Features</h2>
+        <ul>
+            <li><strong>Height:</strong>Ashoka Waterfall is a monsoon-fed waterfall that cascades down from a height of about 120 feet into a poo .</li>
+            <li><strong>Accessibillity :</strong>The waterfall is easily accessible by road. Visitors can take a bus or taxi from Thane to Vihigaon village. From there, it is a short walk to the waterfall.</li>
+            <li><strong>Tourist facilities:</strong>The Government of Maharashtra has developed several tourist facilities at the site, such as a parking lot, a viewing platform, and a garden.</li>
+            <li><strong>Cultural significance:</strong> Waterfall is also believed to have a religious significance for Hindus. There is a small temple located near the waterfall, where visitors come to pray and seek blessings.</li>
+             <li><strong>Conservation efforts:</strong> The Government of Maharashtra has taken several steps to conserve Ashoka Waterfall and its surrounding area. The waterfall has been declared a protected area, and plastic is banned within the premises.</li>       
+        </div>
+
+
+
+        
+ <div style="display: flex;">
+    <div class="gallery-container">
+        <div class="gallery">
+            
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/00/18/b1/rapel-your-way-to-heaven.jpg?w=1200&h=1200&s=1  " alt="Image 1">
+            <img src=" https://www.truewisher.com/wp-content/uploads/2021/01/Vihigaon-Waterfalls.jpg " alt="Image 1">
+            
+            <img src=" https://www.historywithtravel.com/images/ashoka-waterfall/ashoka-waterfall-3.jpg " alt="Image 1">
+    
+            <img src=" https://i.ytimg.com/vi/7ZNY7mzGtq0/sddefault.jpg " alt="Image 1">
+             
+            <!-- Add more images here -->
+        </div>
+    </div>
+
+  
+   </div>
+   <br>
+
+
+
+    <script>
+        const gallery = document.querySelector('.gallery');
+        let imageIndex = 0;
+        const intervalTime = 3000; // Change image every 3 seconds
+
+        function nextImage() {
+            imageIndex = (imageIndex + 1) % gallery.children.length;
+            updateGallery();
+        }
+
+        function updateGallery() {
+            const translateX = -imageIndex * 100;
+            gallery.style.transition = 'transform 1s ease-in-out';
+            gallery.style.transform = `translateX(${translateX}%)`;
+        }
+
+        setInterval(nextImage, intervalTime);
+    </script>
+
+
+
+        <div class="flex-container">
+            <!-- Best Time to Visit container -->
+            <div class="best-time-container container">
+                <h2>Best Time to Visit</h2>
+           <p>The best time to visit Ashoka Waterfall is during the monsoon season, from <strong>June to September. </strong> </p>   
+          <p>During this time, the waterfall is at its fullest and the surrounding area is lush green.</p>
+           <p> The winter months <strong>(October to March)</strong> are also a good time to visit.  </p> 
+           <p>  </p> 
+           <p>  </p>   
+            </div>
+
+            <!-- Tips Before Visiting Waterfall container -->
+            <div class="container">
+                <h2>Tips Before Visiting Waterfall</h2>
+                <ul>
+                    <li> Be aware of the weather forecast and take precautions to stay safe, especially during the monsoon season.</li> 
+                    <li> Wear comfortable shoes and clothing, as the ground can be slippery near the waterfall.</li>  
+                    <li>Be respectful of the environment and dispose of your trash properly. </li>  
+                      
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <!-- Location container -->
+            <div class="map-container center-location-container container">
+                <h2>Location</h2>
+                <p>Vihigaon, Maharashtra 421602India</p>
+
+                <!-- Embed the map here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.025307150744!2d73.47212877522148!3d19.711546681628317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd878dd7e6b317%3A0x8b603e342ce0ffa4!2sVihigaon%20Ashoka%20Water%20Falls!5e0!3m2!1sen!2sin!4v1696662990334!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+<div>
+
+
+<h2> Nearby places you must visit</h2>
+
+<div class="nearby-places">
+            <!-- Nearby Places containers -->
+            <div class="nearby-places-container container">
+                <img src=" https://static.toiimg.com/photo/msid-58570466,width-96,height-65.cms " alt="Tamhini Ghat"  class="nearbyplaces-image">
+                <h2>Vasai beach  </h2>
+                <p>  Vasai Beach is a popular beach located in the Vasai-Virar region of Maharashtra, India. It is a long, sandy beach with a gentle slope. The beach is also known for its beautiful sunsets and its proximity to several historical and religious sites. </p>
+                <h3> Things to do </h3>
+    <ul>
+        <li>Swim, sunbathe, and play in the sand  </li>
+        <li>  Watch the sunset</li>
+        <li>Visit the Vasai Fort  </li>
+        <li> Go for a walk or bike ride along the beach </li>
+        <li> Visit the Vasai Virar Jain Temple </li>
+    </ul>
+
+    <a href=".html"><button>Read More</button></a>
+
+  </div>
+
+  <div class="nearby-places-container container">
+    <img src=" https://thanesmartcity.in/wp-content/uploads/2020/02/Tansa-Wildlife-Sanctuary-723x445.jpg " alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2> Tansa Wildlife Sanctuary:</h2>
+    <p>  The Tansa Wildlife Sanctuary is a protected area located in the Thane district of Maharashtra, India. It was established in 1970 and covers an area of 320 square kilometers. </p>
+    <h3>  Highlights </h3>
+<ul>
+<li> Wildlife:This Sanctuary is home to a variety of wildlife </li>
+<li>Birds: The Tansa Wildlife Sanctuary is a birdwatcher's paradise, with over 250 species of birds found in the sanctuary  </li>
+<li>Tansa Dam  </li>
+<li> Nature trails </li>
+<li>  Boat safaris</li>
+</ul>
+
+<a href=".html"><button>Read More</button></a>
+
+</div>
+
+<div class="nearby-places-container container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Vaitarna.JPG  " alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2> Vaitarna Dam </h2>
+    <p> Vaitarna Dam,  is a gravity dam on the Vaitarna River in the Palghar . It is one of the main sources of water supply for the Mumbai metropolitan area.  </p>
+    <h3>Specifications  </h3>
+<ul>
+<li>  Dam type: Gravity dam</li>
+<li> River: Vaitarna River </li>
+<li> height: 74.5 meters (244 ft) </li>
+<li> length: 714 meters (2,343 ft) </li>
+<li> Reservoir capacity: 2,194 million cubic meters  </li>
+<li>Catchment area: 160.8 square kilometers</li>
+
+</ul>
+
+<a href=".html"><button>Read More</button></a>
+
+</div>
+
+
+<div class="nearby-places-container container">
+    <img src=" https://thumbs.dreamstime.com/z/shree-nityanand-swami-temple-ganeshpuri-thane-bhiwandi-shree-nityanand-swami-temple-ganeshpuri-thane-bhiwandi-maharashtra-109061501.jpg " alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2> Ganeshpuri </h2>
+    <p>  
+Ganeshpuri is a small town in the Palghar district of Maharashtra, India. It is located about 100 km from Mumbai and is known for its hot water springs and the Nityananda Ashram. </p>
+    <h3>Things to do  </h3>
+<ul>
+<li>Take a dip in the hot water springs.  </li>
+<li>Visit the Nityananda Ashram.  </li>
+<li>Visit the Vajreshwari Temple and the Ganesh Temple.  </li>
+<li> Go for a hike in the nearby hills. </li>
+<li>  Visit the local markets.</li>
+</ul>
+
+<a href=".html"><button>Read More</button></a>
+
+</div>
+ 
+
+</div>  
+
+<div>
+    <h2>Nearby Hotels</h2>
+    
+    <!-- Flex container for arranging hotels in a row -->
+    <div class="hotel-row">
+        <!-- Hotel 1 -->
+        <div class="hotel-container">
+            <img src=" https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/45/77/3e/pool-lawn-area.jpg?w=700&h=-1&s=1 " alt="Hotel " class="hotel-image">
+            <h2>Tropical Retreat Luxury Resort & Spa  </h2>
+            <p>Address:Pimpri Phata, National Highway no 3 Behind PWD Office, Igatpuri 422403 India  </p>
+            <p> 6 Attractionswithin 10 km   </p>  
+            <p>Price: From Rs 6,384 </p>
+
+            <a href=" https://www.tripadvisor.in/Hotel_Review-g1156428-d10903379-Reviews-Tropical_Retreat_Luxury_Resort_Spa-Igatpuri_Nashik_District_Maharashtra.html " class="more-details-button">Click Here for More Details</a>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div class="hotel-container">
+            <img src=" https://q-xx.bstatic.com/xdata/images/hotel/max500/210547768.jpg?k=b23fcc3184b0a38462483ad5bb51f621f3781cba9b014defa15f4cbcaa50a463&o=&isSkia=true " alt="Hotel " class="hotel-image">
+            <h2>Manas Lifestyle Resort  </h2>
+            <p>Address: Gate no 286 Mumbai Agra Highway, Igatpuri 422403 India  </p>
+            <p> 8 Attractionswithin 10 km   </p>  
+            <p>Price: From Rs 4,922 </p>
+
+            <a href=" https://www.tripadvisor.in/Hotel_Review-g1156428-d1173013-Reviews-Manas_Lifestyle_Resort-Igatpuri_Nashik_District_Maharashtra.html " class="more-details-button">Click Here for More Details</a>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div class="hotel-container">
+            <img src=" https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1547992750/Hotel/00023894/Wedding_Decoration_(3)_ST9rpk.jpg " alt="Hotel " class="hotel-image">
+            <h2> Manas Resort with Petting Zoo </h2>
+            <p>Address: 303/A, National Highway 3, Igatpuri 422403 India </p>
+            <p> 8 Attractionswithin 10 km   </p>  
+            <p>Price: From Rs 5,107</p>
+
+            <a href=" https://www.tripadvisor.in/Hotel_Review-g1156428-d1437808-Reviews-Manas_Resort_with_Petting_Zoo-Igatpuri_Nashik_District_Maharashtra.html " class="more-details-button">Click Here for More Details</a>
+        </div>
+
+
+    </div>
+
+</div>  
+    </main>
+
+    <footer> 
+        <div class="foot-panel">
+           
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <h3>Accommodations</h3>
+    
+    <a>Hotels<br>
+    Resorts<br>
+    Hostels<br>
+    Vacation Rentals<br>
+    Camping Sites<br>
+    Bed and Breakfast<br>
+    Flight Booking<br>
+    Airlines<br>
+    Airport Information<br>
+    Flight Status<br>
+    Baggage Guidelines<br>
+    Frequent Flyer Programs</a>
+            </ul>
+            <ul>
+                <h3>Travel Guides</h3>
+    
+    <a>Travel Tips<br>
+    Packing Lists<br>
+    Visa and Passport Information<br>
+    Travel Insurance<br>
+    Local Etiquette<br>
+    Cultural Insights<br>
+    Sightseeing<br>
+    Outdoor Adventures<br>
+    Cultural Experiences<br>
+    Food and Dining<br>
+    Shopping<br>
+    Nightlife</a>
+            </ul>
+            <ul>
+                <h3>About Us</h3>
+                <a>Company Information<br>
+                Our Team<br>
+                Mission and Values<br>
+                Testimonials<br>
+                Contact Information<br>
+                Careers<br>
+                FAQs<br>
+                Contact Us<br>
+                Booking Assistance<br>
+                Cancelation Policy<br>
+                Travel Alerts<br>
+                Feedback</a>
+            </ul>
+            <ul>
+                <h3>Social Media</h3>
+                <a>Facebook
+                    <br>
+                    Twitter
+                    <br>
+                    Instagram<br>
+                    Pinterest<br>
+                    YouTube<br>
+                    Blog Subscription<br>
+                    Travel Advisories<br>
+                    Health and Vaccination<br>
+                    Safety Tips<br>
+                    Emergency Contacts<br>
+                    Travel Insurance</a>
+    
+            </ul>
+        </div>
+        
+       
+        </footer>
+        <div class="separate-container">
+            <h3>Follow Us on Social Media</h3>
+    
+            <!-- Social media icons within separate container -->
+            <div class="social-icons-container">
+                <a class="social-icon-link facebook" href="https://www.facebook.com/ExploreMaharashtraWebsite?mibextid=ZbWKwL " target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon-link twitter" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08 " target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon-link instagram" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-icon-link linkedin" href="https://www.linkedin.com/in/explore-maharashtra-c9-aa2729294/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social-icon-link youtube" href="https://www.youtube.com" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <!-- End of social media icons within a separate container -->
+    
+            <!-- Rest of your content goes here -->
+    
+            <p>Stay connected with us on social media for updates and more!</p>
+    
+            <!-- Phone number and address -->
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: VIT Pune, IT Department, SY-C-Group No.15, Pune, India</p>
+            </div>
+            <!-- End of phone number and address -->
+        </div>
+       
+    
+    </body>
+    
+    </html>

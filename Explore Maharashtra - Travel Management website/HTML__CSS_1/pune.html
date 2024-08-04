@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <title>Document</title>
+</head>
+<body>
+    <style>
+         #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(1, 1, 22);
+            color: #dfd3d3;
+
+            margin-left: 0px;
+        }
+
+        #logo {
+            text-decoration: none;
+            font-size: 24px;
+            color: #dfd3d3;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: #dfd3d3;
+            margin: 0 10px;
+            font-size: 19.4px;
+    font-weight: lighter;        }
+        .imgslider {
+            width: 100%;
+            height: 750px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            /* Allows positioning of child elements */
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            animation: changeImage 12s linear infinite;
+            display: flex; /* Add display: flex; to center content vertically */
+            align-items: center; /* Center content vertically */
+        }
+        .slider-content {
+            position: absolute;
+            top: 20%;
+            /* Center the content vertically */
+            left: 48%;
+            /* Center the content horizontally */
+            transform: translate(-50%, -50%);
+            /* Center the content precisely */
+            text-align: center;
+            color: #efe4e4;
+            /* Text color */
+            padding: 20px;
+            /* Add padding for better readability */
+        }
+        @keyframes changeImage {
+            0% {
+                background-image: url("https://i.pinimg.com/originals/11/d1/9b/11d19b3d6af05de4bd7d61b77ba4ef22.jpg");
+            }
+
+            50% {
+                background-image: url("https://i.pinimg.com/originals/11/d1/9b/11d19b3d6af05de4bd7d61b77ba4ef22.jpg");
+            }
+
+            50% {
+                background-image: url("https://i.pinimg.com/originals/11/d1/9b/11d19b3d6af05de4bd7d61b77ba4ef22.jpg");
+            }
+
+            75% {
+                background-image: url("https://admin.purplerealtors.in/admin/upload/Main/new_15787918091669440584.jpg");
+            }
+
+            100% {
+                background-image: url("https://media.istockphoto.com/id/1341202938/photo/drone-views-india.jpg?s=612x612&w=0&k=20&c=jByhgNsqA5ta8V4w5ifVNcndlXjYDpaEKvxdrkS8IKM=");
+            }
+        }
+        .slider-content h1 {
+            font-size: 50px;
+            /* Adjust heading font size */
+            margin-top: 10px;
+            margin-left: 120px;
+            /* Space between heading and paragraph */
+        }
+        .additional-container {
+        background-color: rgba(249, 245, 245, 0.8); /* Background color with transparency */
+        padding: 20px; /* Add padding for spacing */
+        width: 400px;
+        height: 400px;
+        margin-top: 70px;
+        margin-left: 40px;
+        text-align: center; /* Center the content horizontally */
+    }
+    .additional-container p {
+        margin-top: 1px;
+        font-size: 16px;
+    }
+    #navbar a {
+    text-decoration: none;
+    color: #dfd3d3;
+    margin: 0 10px;
+    font-size: 18px;
+    display: flex; /* Add display: flex; to arrange text and icon vertically */
+    flex-direction: column; /* Arrange text and icon in a column layout */
+    align-items: center; /* Center content horizontally */
+}
+    </style>
+</body>
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+    <div class="imgslider"
+    style="background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/top-view-of-beautiful-white-sand-beach--aerial-drone-shot-mohamed-abdulraheem.jpg');">
+
+    <div class="imgslider"
+        style="background-image: url('https://news.cgtn.com/news/3d3d774e314d444e34457a6333566d54/img/aa2cabebf2924e9f912ebb8eb1df796d/aa2cabebf2924e9f912ebb8eb1df796d.jpg');">
+        <div class="slider-content">
+            <h1>Pune's Architectural Marvels</h1>
+        </div>
+        <div class="additional-container">
+            <!-- Add content or elements inside this container -->
+            <p>Certainly! Here is some information about Pune, a city located in the western state of Maharashtra, India:</p>
+            <p>Pune is situated in the western part of India and is the second-largest city in the state of Maharashtra. It is approximately 118 kilometers (73 miles) southeast of Mumbai, the state capital.</p>
+        <p>Pune has a rich history that dates back to ancient times. It was the capital of the Maratha Empire in the 18th century and played a significant role in the Indian struggle for independence against British colonial rule.</p>
+        <p>Pune is known for its vibrant cultural scene. It is often referred to as the "Oxford of the East" due to the presence of several prestigious educational institutions. The city has a diverse population, and you can experience a blend of traditional and modern culture.</p>
+        <p>Pune is known for its educational institutions, including the University of Pune (now Savitribai Phule Pune University), which is one of the largest universities in India. The city is a hub for education and research.</p>
+        
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

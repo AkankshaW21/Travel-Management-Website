@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Blurred Background with Overlay Image</title>
+</head>
+<body>
+    <style>
+
+
+           h2 {
+        margin-left: 50px;
+           }
+
+p {
+   margin-left: 100px;
+   margin-right: 100px;
+}
+    /* Reset default margin and padding */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        /* Set background image and apply blur effect */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 550px; /* Set the desired height for the blurred background */
+            overflow: hidden;
+        }
+
+        .blur-background {
+            background-image: url('.vscode/Nagarkhana,_Raigad_Fort,_India (1).jpg');
+            height: 1200px;
+            width: 1500px;
+            filter: blur(15px); /* Adjust the blur intensity as needed */
+            position: absolute;
+            z-index: -1;
+        }
+
+        /* Style the overlay image */
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 50%; /* Adjust the left position to your desired spacing */
+            transform: translate(-50%, -50%);
+            width: 1000px; /* Set the desired width for the overlay image */
+            height: 500px; /* Set the desired height for the overlay image */
+           
+        }
+        .overlay-text {
+            position: absolute;
+            top: 20%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            color: black; /* Set the text color */
+            font-size: 50px; /* Set the font size */
+            font-weight: bold; /* Set the font weight */
+        }
+
+        /* Create a new container on the right side */
+        .right-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px; /* Adjust the width of the right container as needed */
+            height:510px;
+            background-color: rgba(46, 45, 45, 0.7);
+             /* Background color for the right container */
+             margin-right: 100px;
+             border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+             margin-top: 16px;
+             text-align: center;
+        }
+
+        .fort-text {
+            font-size: 36px;
+            font-weight: bold;
+           margin-top: 170px;
+           text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style for the location symbol */
+        .location-symbol {
+            font-size: 50px;
+            color: white;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            margin-right: 130px;
+            margin-left: 130px;
+            
+
+        }
+
+        /* Style for the location text */
+        .location-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+        }
+        /* Style for the weather/climate container */
+/* Style for the blurred background container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Set the desired height for the blurred background */
+    overflow: hidden;
+}
+
+.blur-background {
+    background-image: url('https://www.mountmarybasilicabandra.in/assets/images/basilica_ff34view2webnew.36173148_std.jpg');
+    height: 1200px;
+    width: 1500px;
+    filter: blur(15px); /* Adjust the blur intensity as needed */
+    position: absolute;
+    z-index: -1;
+}
+
+/* Style for the weather/climate container */
+.table-container {
+    background-image: url('.vscode/depositphotos_471952152-stock-photo-abstract-painterly-dramatic-scenery-clouds.jpg'); /* Use the same background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 80px;
+    border-radius: 35px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Align text to the left */
+    font-family: Arial, sans-serif; /* Specify font family */
+}
+
+/* Style for the weather/climate headings */
+.table-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #090707; /* Change text color to your preference */
+     /* Convert text to uppercase */
+}
+
+/* Style for the weather/climate content */
+.table-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000; /* Change text color to your preference */
+}
+
+/* Style for h3 headings within the weather content */
+.table-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0101; /* Change text color to your preference */
+}
+
+/* Style for paragraph text within the weather content */
+.table-container p {
+    margin-bottom: 10px;
+}
+
+/* Style for the overall page background (optional) */
+body {
+    background-color: #f0f0f0; /* Change background color to your preference */
+    font-family: Arial, sans-serif; /* Specify font family */
+}
+
+
+
+
+
+.location-container {
+    background-color: rgb(205, 200, 200);
+    background-position: center;
+    padding: 20px;
+    height: 700px;
+    width: 800px;
+    margin-top: 20px; /* Adjust margin-top for desired spacing */
+    margin-left: 150px;
+    margin-right: 600px; /* Adjust margin-right for desired spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+
+.location-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #090707; /* Change text color to your preference */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.location-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000; /* Change text color to your preference */
+}
+
+/* Style for h3 headings within the location content */
+.location-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0101; /* Change text color to your preference */
+}
+
+/* Style for paragraph text within the location content */
+.location-container p {
+    margin-bottom: 10px;
+}
+.horizontal-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            margin-left: 100px;
+            margin-right: 100px;
+           
+        }
+
+        .container-item {
+            width: 300px;
+            height: 600px;
+           
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-image {
+            height: 50%;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .container-text {
+            padding: 10px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+          /*  justify-content: space-between;*/
+        }
+        .container-heading a {
+            text-decoration: none; /* Remove the default underline */
+            color: #333; /* Set the text color to your preference */
+            cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+            
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+        .read-more-button {
+            background-color: rgb(230, 42, 42);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: auto;
+        }
+
+        .read-more-button:hover {
+            background-color: rgb(230, 42, 42);
+        }
+        .review-box {
+    background-color: green;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    width: 60px; /* Adjust the width as needed */
+    height: 20px;
+    margin-left: 180px; /* Center the box horizontally */
+    border-radius: 10px;
+}
+
+.rating {
+    font-size: 15px;
+    font-weight: bold;
+}
+    /* Additional styles for the second set of containers */
+        .second-set {
+            margin-top: 30px; /* Add margin to separate the sets of containers */
+        }
+
+
+        .additional-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px; /* Adjust margin-right for desired spacing */
+            /*height: 330px;
+            width: 1300px;*/
+            margin-left: 70px;
+            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+        }
+
+        /* Style for individual additional containers */
+        .additional-item {
+            height: 300px;
+            width: 300px;
+            flex: 0 0 calc(25% - 40px); /* Set the width for each container with margin */
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px; /* Add margin to create space between containers */
+            padding: 0px;
+        }
+
+        /* Style for the image in the additional container */
+        .additional-image {
+            height: 250px; /* 75% of the container's height for the image */
+            width:266px;
+            background-size: cover;
+            background-position: center;
+            border-radius:  0 0; /* Rounded corners only at the top */
+        }
+
+        /* Style for the content within the additional container */
+        .additional-content {
+            margin-top: 5px; /* Add space between the image and content */
+            padding: 10px;
+        }
+
+
+.h3 {
+    margin-top: 5px;
+}
+p{
+    margin-left: 25px;
+    margin-right: 25px;
+   
+}
+
+
+
+.footer {
+    margin-top:15px;
+    
+
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.85rem;
+}
+ .foot-panel2  {
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+ } 
+ ul {
+     margin-top: 20px ;
+ }
+ 
+  ul a {
+     display:block;
+     font-size: 3 rem;
+     margin-top: 10px;
+     color:#dddddd:
+  }
+ 
+  .foot-panel3 {
+         background-color: #222f3d;
+         color: white;
+         border-top:0.5px solid white;
+         height:70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+  }
+
+  .separate-container {
+            background-color: #607389;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .separate-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for social media icons within separate container */
+        .social-icons-container {
+            font-size: 34px;
+            
+        }
+        .table-container {
+            background-color:rgb(159, 157, 157);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        /* Style for the table heading */
+        .table-heading {
+            color: #333;
+        }
+
+        /* Style for the table */
+        table.center {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Style for table headers */
+        table.center th {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Style for table cells */
+        table.center td {
+            padding: 8px;
+        }
+
+        /* Style for odd rows */
+        table.center tr:nth-child(odd) {
+            background-color:rgb(228, 184, 71);
+        }
+
+        /* Style for even rows */
+        table.center tr:nth-child(even) {
+            background-color: lightyellow;
+        }
+        /*read more */
+        #moreInfo {
+            display: none;
+        }
+        ul{
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+/* Style for individual containers */
+
+
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+   
+
+
+
+    </style>
+</body>
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+    <div class="container">
+        <div class="blur-background"></div>
+        <img class="overlay-image" src="https://www.mountmarybasilicabandra.in/assets/images/basilica_ff34view2webnew.36173148_std.jpg" alt="Overlay Image" >
+        <div class="overlay-text">MOUNT MARY CHURCH</div>
+        
+       <!-- <div class="right-container">
+            <div class="fort-text">Bhimashankar Temple</div>
+            <div class="location-symbol">&#128725;
+            </div>
+            <div class="location-text">Pune,MaharashtraIndia</div>
+             Add content for the right container here 
+        </div>-->
+    </div>
+    <br>
+    <br>
+    <div class="location-container">
+        <h2 class="location-heading"></h2>
+        <p class="table-content">
+            
+            <h3>Overview</h3>Officially the Basilica of Our Lady of the Mount Bandra, colloquially known as Mount Bandra and Mount St Mary Church, is a basilica (shrine) of the Latin Church in India, located in the Bandra neighbourhood of Bombay (Mumbai). 
+            The festival of the nativity of St Mary, also known as Marymas or the Bandra Fest, is celebrated here on the 8th day of September, which is the occasion of the birth of the virgin-mother of Jesus Christ. 
+        </p>
+     <br>   
+    <p><h4>Location:Bandra West, Mumbai, Maharashtra</p>
+    
+    <p><h4>Architectural style: Gothic Revival architecture</h4></p>
+    
+    <p><h4>Phone: 075069 81522</h4></p>
+    
+    <p><h4>Hours: 6 am-8:30 pm</h4></p>
+    <p><h4>Map</h4></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3814705584373!2d72.82100107520463!3d19.04695838215164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9464c042fd3%3A0xd2601f93f20cf528!2sMount%20Mary%20Church%20Steps!5e0!3m2!1sen!2sin!4v1695189150924!5m2!1sen!2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+ <br><br>
+
+    <h2>History</h2>
+    <p>The basilica stands on a hillock, about 80 metres above sea level overlooking the Arabian Sea. It draws lakhs of devotees and pilgrims annually. Many of the faithful attest to the miraculous powers of the Blessed Virgin Mary. The shrine attracts people from all faiths who pray to the Virgin Mary for expressing their gratitude or requesting favours. The church was raided and destroyed in 1738 during the Mahratta Invasion of Bassein, led by the Peshva Brahmin Chimaji Appa. It was rebuilt in British Bombay.</p>
+    <br>
+        <h2> What is the story behind Mount Mary Bandra?</h2>
+       <p> There are different legends associated with the Bhimashankar Jyotirlinga. Here are two of them.
+        
+        According to one legend, a demon called Tripurasura performed penance in the Bhimashankar jungle to please Lord Shiva and ask him for the gift of immortality. Lord Shiva was pleased with his devotion and granted him immortality on the condition that he would use his power to help the local people. Tripurasura agreed with Him. However, over time, he forgot his promise and began to harass both humans and the gods. When the gods begged Lord Shiva to do something to stop the ensuing chaos, the Lord prayed to his consort Goddess Parvati. Both of them appeared as Ardhanari Nateshwara and killed Tripurasura, after which peace prevailed.
+        
+        According to another legend, in the Dakini forests on the ranges of the Sahyadri Mountains lived an asura (demon) named Bhima with his mother Karkati. He was, in fact, the son of Kumbharkarna, the younger brother of King Ravana. When he learnt that Lord Vishnu had killed his father in his avatar as Rama, he was furious. He vowed revenge and performed severe penance to please Lord Brahma.
+        
+        In return, Brahma blessed him with immense strength, which he used to terrorize the world. He imprisoned an ardent devotee of Lord Shiva, Kamrupeshwar and demanded that he pray to him instead of Lord Shiva. When Kamrupeshwar refused to do so, Bhima raised his sword to destroy the Shivalinga. That is when Lord Shiva appeared before him and reduced him to ashes. The place where Lord Shiva manifested himself is the spot the Shivalinga is believed to be now.</p>
+       <br>
+       <br>
+
+
+
+    <h2>Special features of Mount Mary Church</h2>
+<p>The church offers beautiful views of the Arabian Sea and the city's skyline. Popularly known as Mount Mary Church, the kirk is over a century old. However, the statue of Virgin Mary protected inside dates back to the 16th century.
+    The walls of the church are decked with delicate fiberglass murals that depict the life of Mother Mary. The statue of Mother Mary holding baby Jesus is situated on a seven-step high altar. 'The Last Supper' is etched on a marble plaque on the lowest level of the altar.
+</p>
+
+<br>
+<h2>Programs in Mount Mary Church</h2>
+<p>Mount Mary Festival has been hosted for more than 300 years. It is held within the Mount Mary Church complex and the lanes around the church. It is like a carnival with games, concerts and amusement rides.</p>
+    <p>During the festival, there are stalls that sell exotic delicacies of both Goan and Maharashtrian culture. They also sell sweets, homemade cakes and fudges, chikki and many other edibles. In past years, as many as 430 stalls selling candles, flowers, food, toy and artificial jewellery are set up at the fair.
+
+        The Mount Mary Festival attracts a large number of people from all religions and communities.</p>
+
+<!-- Weather/Climate Container -->
+<br>
+<h2>Mount Mary Church Mumbai timings</h2>
+<p><b>Visit Timings</b></p>
+<ul>
+    <li>Mount Mary Church is open from 8:00 AM to 1:00 PM and then from 2:00 PM to 8:30 PM from Monday to Saturday.</li>
+    <li>On Sundays, it is open from 10:30 AM to 8:30 PM.</li>
+</ul>
+<br>
+<p><b>Mass and Prayer Timings</b></p>
+<ul>
+    <li>Weekday Mass – 6:30 AM and 7:15 AM (No evening mass)</li>
+    <li>Sunday Mass – 6:30 AM, 7:30 AM, 8:30 AM and 9:30 AM (No evening mass)</li>
+    <li>Sunday Prayers for those with special needs – 4:00 PM to 7:00 PM</li>
+</ul>
+<br>
+<p><b>Evening Mass/Service Timings</b></p>
+<ul>
+    <li>First Fridays – 6:00 PM (Holy Hour Service)</li>
+    <li>First Saturdays – 6:00 PM (Devotion prayer to Our Lady of Fatima Service)</li>
+</ul>
+
+<br>
+<br>
+<br>
+<h2>Near By Places</h2><br>
+<div class="horizontal-container">
+    <div class="container-item">
+        <!--<div class="container-image" style="background-image: url('your-image-url-1.jpg');"></div>-->
+        <img class="container-image" src="	https://media.tripinvites.com/places/mumbai/bandra-fort/bandra-fort-views-featured.jpg" >
+        <div class="container-text">
+            <h3 class="container-heading"><a href="takmak tok.html">Bandra Fort</a></h3>
+           <br>
+            <p>Also known as Castella de Aguada, Bandra Fort is an ancient Portuguese Fort that is situated in Land’s End in the Bandra neighborhood of Mumbai. The fort lies several feet high from the average sea level, at a height of 24 m.</p>
+            
+            <p>Besides being an important historical site and a tourist attraction, Bandra Fort offers mesmerizing views of the sea. </p>
+            <button class="read-more-button">Read More</button>
+        </div>
+    </div>
+    <div class="container-item">
+        <img class="container-image" src="https://t4.ftcdn.net/jpg/03/92/71/59/360_F_392715913_VYxEgxybw86iYSdDp987s6SH5wA1jSw5.jpg">
+        <div class="container-text">
+            <h3 class="container-heading"><a href="jadadishwar temple.html">Bandra Worli Sea Link</a></h3>
+            <br>
+            <p>Officially known as Rajiv Gandhi Sea Link, this eight-lane cable-stayed bridge in Mumbai is the first project initiated by Maharashtra Government that commences West Island Freeway System. Bandra Worli Sea Link is one of the few bridges that is a cable-stayed with pre-stressed concrete-steel viaducts to hold it in place.
+            </p>
+            <button class="read-more-button">Read More</button>
+           
+           
+            </div>
+    </div>
+    <div class="container-item">
+        <img class="container-image" src="https://www.holidify.com/images/cmsuploads/compressed/CarterRoad_20191224181258_20191224181353.jpg">
+        <div class="container-text">
+            <h3 class="container-heading"><a href="raj bhawan.html">Carter Road</a></h3>
+            <p>Situated next to Bandstand Promenade just next to Bandra, Carter Road is one of the most happening and popular hangout places among the Mumbaikars. The locale is a haven for foodies owing to its bazillion food options from the umpteen eateries situated on the sidewalk.</p>
+            <button class="read-more-button">Read More</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Second set of containers -->
+<div class="horizontal-container second-set">
+    <!-- Container 4 -->
+    <div class="container-item">
+        <img class="container-image" src="https://images.myguide-cdn.com/mumbai/companies/joggers-park/large/joggers-park-244988.jpg
+        ">
+        <div class="container-text">
+            <h3 class="container-heading"><a href="ropeway.html">Joggers Park </a></h3>
+            <br>
+            <p>As the name suggests, Joggers Park is a fabulous place for morning/ evening jogs and walks. But, the place is bustling with visitors almost throughout the day. Visitors can explore the well-landscaped park that consists of tall and dense trees, shrubbery, lawns with well-kept walkways, water bodies with ducks and fishes and a scenic view of the Arabian Ocean.</p>
+            <button class="read-more-button">Read More</button>
+        </div>
+    </div>
+    <!-- Container 5 -->
+    <div class="container-item">
+        <img class="container-image" src="https://www.holidify.com/images/cmsuploads/compressed/Bandra_Bandstand_20180328172404.jpg">
+        
+        <div class="container-text">
+            <h3 class="container-heading"><a href="gangasagr lake.html">Bandstand</a></h3>
+           <br>
+            <p>Bandra Bandstand or Bandstand Promenade is the popular promenade in the queen suburbs of Bandra in Mumbai. It boasts of a joggers’ strip and a park making it quite a popular hangout spot. Dotted with food junctions and sprinkled with hawkers selling street snacks, the promenade is replete with swarms of people at all points of the day.</p>
+           <button class="read-more-button">Read More</button>
+        </div>
+    </div>
+    <!-- Container 6 -->
+    <div class="container-item">
+        <img class="container-image" src="https://i.redd.it/1op8yt9poue91.jpg">
+       
+        <div class="container-text">
+            <h3 class="container-heading"><a href="maha darwaja.html">Dadar Chowpatty Beach</a></h3>
+           <br>
+            <p>Dadar Chowpatty Beach is situated in the Dadar suburbs of Mumbai. Majorly popular for the giant view of the Bandra Worli Sea Link bridge, this beach is customarily used for jogging and watching beautiful sunsets. Located in South Bombay, the beach is frequented by residential locals coming for an evening stroll. </p>
+           <button class="read-more-button">Read More</button>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<p1><h2>Top Hotels Near Mount Mary Church</h2></p1>
+<!-- Additional Containers -->
+    <div class="additional-container">
+        <!-- Additional Container 1 -->
+        <div class="additional-item">
+            <img class="additional-image"   src="https://media-cdn.tripadvisor.com/media/photo-s/21/e9/c3/e4/la-moire-resort-a-perfect.jpg">
+                <div class="additional-content">
+                    <h3><a href="resort4.html" >Hotels</a></h3>
+                    </div>
+                  </div>
+           
+        
+        <!-- Additional Container 2 -->
+        <div class="additional-item">
+        <img class="additional-image"   src="https://media-cdn.tripadvisor.com/media/photo-s/02/a4/99/ad/filename-bhimashankar.jpg">
+            <div class="additional-content">
+                <h3><a href="maount marry carch resorts.html" >Resorts</a></h3>
+                </div>
+              </div>
+        
+        <!-- Additional Container 3 -->
+        <div class="additional-item">
+            <img class="additional-image"   src="https://ak-d.tripcdn.com/images/0221s12000aub1gagDAC8_R_550_412_R5.jpg
+            ">
+                <div class="additional-content">
+                    <h3><a href="resort4.html" > Cheap Hotels</a></h3>
+                    </div>
+                  </div>
+
+                         
+    </div>
+    <!-- Your other content here -->
+
+  
+
+    <footer> 
+        <div class="foot-panel">
+           
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <h3>Accommodations</h3>
+    
+    <a>Hotels<br>
+    Resorts<br>
+    Hostels<br>
+    Vacation Rentals<br>
+    Camping Sites<br>
+    Bed and Breakfast<br>
+    Flight Booking<br>
+    Airlines<br>
+    Airport Information<br>
+    Flight Status<br>
+    Baggage Guidelines<br>
+    Frequent Flyer Programs</a>
+            </ul>
+            <ul>
+                <h3>Travel Guides</h3>
+    
+    <a>Travel Tips<br>
+    Packing Lists<br>
+    Visa and Passport Information<br>
+    Travel Insurance<br>
+    Local Etiquette<br>
+    Cultural Insights<br>
+    Sightseeing<br>
+    Outdoor Adventures<br>
+    Cultural Experiences<br>
+    Food and Dining<br>
+    Shopping<br>
+    Nightlife</a>
+            </ul>
+            <ul>
+                <h3>About Us</h3>
+                <a>Company Information<br>
+                Our Team<br>
+                Mission and Values<br>
+                Testimonials<br>
+                Contact Information<br>
+                Careers<br>
+                FAQs<br>
+                Contact Us<br>
+                Booking Assistance<br>
+                Cancelation Policy<br>
+                Travel Alerts<br>
+                Feedback</a>
+            </ul>
+            <ul>
+                <h3>Social Media</h3>
+                <a>Facebook
+                    <br>
+                    Twitter
+                    <br>
+                    Instagram<br>
+                    Pinterest<br>
+                    YouTube<br>
+                    Blog Subscription<br>
+                    Travel Advisories<br>
+                    Health and Vaccination<br>
+                    Safety Tips<br>
+                    Emergency Contacts<br>
+                    Travel Insurance</a>
+    
+            </ul>
+        </div>
+        
+       
+        </footer>
+
+        <div class="separate-container">
+            <h3>Follow Us on Social Media</h3>
+    
+            <!-- Social media icons within separate container -->
+            <div class="social-icons-container">
+                <a class="social-icon-link facebook" href="https://www.facebook.com/ExploreMaharashtraWebsite?mibextid=ZbWKwL " target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon-link twitter" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08 " target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon-link instagram" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-icon-link linkedin" href="https://www.linkedin.com/in/explore-maharashtra-c9-aa2729294/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social-icon-link youtube" href="https://www.youtube.com" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <!-- End of social media icons within a separate container -->
+    
+            <!-- Rest of your content goes here -->
+    
+            <p>Stay connected with us on social media for updates and more!</p>
+    
+            <!-- Phone number and address -->
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: VIT Pune, IT Department, SY-C-Group No.15, Pune, India</p>
+            </div>
+            <!-- End of phone number and address -->
+        </div>
+       
+    
+    </body>
+    
+    </html>

@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="destination.css">
+	<title>Destinations</title>
+	<style type="text/css">
+		.container .box .name-text input{
+			position: relative;
+			display: none;
+			background: transparent;
+			border: 1px solid #fff;
+			top: -20px;
+			color: #fff;
+			text-decoration: none;
+			transition: 0.6s ease;
+			text-align: center;
+		}
+		.btn{
+			padding: 5px 40px;
+		}
+		.btn1{
+			margin: 0px -20px;
+			padding: 5px 40px;
+		}
+		.btn2{
+			padding: 5px 60px;
+		}
+		.btn3{
+
+
+			
+			padding: 5px 37px;
+			margin: 0px -2px;
+		}
+		.btn4{
+			padding: 5px 50px;
+		}
+		.btn5{
+			padding: 5px 25px;
+		}
+		.container .box:hover .name-text input{
+			display: block;
+			top: -20px;
+		}
+		.container .box .name-text input:hover{
+			background-color: #fff;
+		    color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+	<h1 class="heading">Poupular Places</h1>
+
+  
+	<div class="container">
+		<div class="box">
+			<div class="imgBox">
+				<img src=".vscode/Raigad-fort-Gate.jpg" alt="Goa Image" style="width: auto;height: 270px;">
+			</div>
+			<div class="name-text name-pading1 top1">
+				<h1>Raigad</h1>
+				<form method="POST" action="Raigadplace.php">
+					<input type="submit" name="raigad" class="btn1" value="Info">
+				</form>
+
+                <form method="POST" action="bookingplace.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src=".vscode/Pratapgad-featured.jpg" alt="Russia Image" style="width: auto;height: 270px;">
+			</div>
+			<div class="name-text name-pading2 top1">
+				<h1>Pratapgad</h1>
+				<form method="POST" action="Pratapgadplace.php">
+					<input type="submit" name="pratapgad" class="btn" value="Info">
+				</form>
+                <form method="POST" action="nobookingplaces.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://beyonddevbucket.s3.ap-south-1.amazonaws.com/dynamic/beimg0k5dhi0kg.png" alt="Russia Image">
+			</div>
+			<div class="name-text name-pading3 top1">
+				<h1>Way n Joy</h1>
+				<form method="POST" action="watnjoy.php">
+					<input type="submit" name="waynjoy" class="btn" value="Info">
+				</form>
+                <form method="POST" action="bookingplace.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://www.seawatersports.com/img/newimage/activies/slide/krushnai-water-park-cost.png" alt="Russia Image">
+			</div>
+			<div class="name-text name-pading4 top1">
+				<h1>Krushnai(WP)</h1>
+				<form method="POST" action="krushnai.php">
+					<input type="submit" name="krushnai" class="btn" value="Info">
+				</form>
+                <form method="POST" action="bookingplace.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src=".vscode/253056-sinhagad-fort (3).avif" alt="Russia Image">
+			</div>
+			<div class="name-text name-pading5 top2">
+				<h1>Sinhgad</h1>
+				<form method="POST" action="sinhgadfort.php">
+					<input type="submit" name="sinhgad" class="btn5" value="Info">
+				</form>
+                <form method="POST" action="nobookingplaces.html">
+					<input type="submit" name="agra" class="btn5" value="Booking">
+				</form>
+                
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://assets.zeezest.com/blogs/PROD_Banner-Dagdusheth-Halwai-Ganpati-this-year_1695881145817.jpg" alt="Russia Image">
+			</div>
+			<div class="name-text name-pading6 top2">
+				<h1>Ganapati(Pune)</h1>
+				<form method="POST" action="dagadushethganapati.php">
+					<input type="submit" name="ganapati" class="btn2" value="Info">
+				</form>
+                <form method="POST" action="bookingplace.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src=".vscode/lohgad_-www.bhramanti365.in-2.jpg" alt="Russia Image">
+			</div>
+			<div class="name-text name-pading7 top2">
+				<h1>Lohagad</h1>
+				<form method="POST" action="lohagadfort.php">
+					<input type="submit" name="lohagad" class="btn3" value="Info">
+				</form>
+                <form method="POST" action="bookingplace.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://im.whatshot.in/img/2020/Jul/zunzar-machi-at-torna-1594871123.jpg?q=90" alt="Rajasthan Image">
+			</div>
+			<div class="name-text name-pading8 top2">
+				<h1>Torna</h1>
+				<form method="POST" action="tornafort.php">
+					<input type="submit" name="torna" class="btn2" value="Info">
+				</form>
+                <form method="POST" action="nobookingplaces.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Mahalaxmi_Temple%2C_Kolhapur.jpg" alt="Manali Image">
+			</div>
+			<div class="name-text name-pading9 top3">
+				<h1>Temple</h1>
+				<form method="POST" action="mahalaxmitemple.php">
+					<input type="submit" name="temple" class="btn3" value="Info">
+				</form>
+                <form method="POST" action="bookingplace.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://www.tourmyindia.com/states/maharashtra/images/kune-waterfalls-khandala1.jpg" alt="Srinagar Image">
+			</div>
+			<div class="name-text name-pading10 top3">
+				<h1>Kune Waterfall</h1>
+				<form method="POST" action="kunewaterfalll.php">
+					<input type="submit" name="kunewaterfall" class="btn4" value="Info">
+				</form>
+                <form method="POST" action="nobookingplaces.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://vl-prod-static.b-cdn.net/system/images/000/459/192/867ce13b25808c131ba2a224332b77f8/original/Devkund-waterfalls.jpg?1692690999" alt="Amritsar Image">
+			</div>
+			<div class="name-text name-pading11 top3">
+				<h1>Devkund Waterfall</h1>
+				<form method="POST" action="devkund.php">
+					<input type="submit" name="devkund" class="btn4" value="Info">
+				</form>
+                <form method="POST" action="nobookingplaces.html">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+		<div class="box">
+			<div class="imgBox">
+				<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip_T3M7qopLkSt9nGGkcXyf-tRxk3fLLatTOA1xWaP72BHQyAObvMEzfwocxK-0ZyXWjpxQx_C0MLPv4rWC9g6VUtgnmqcArahxCgu38WQ2Ns4IEYj66kOSgk19qpS28PBZwE6Wwck0dXX/s1008/2880px-Mumbai_03-2016_46_evening_at_Marine_Drive.jpg" alt="Jog Falls Image">
+			</div>
+			<div class="name-text name-pading12 top3">
+				<h1>Juhu Beach</h1>
+				<form method="POST" action="juhubeach.php">
+					<input type="submit" name="juhubeach" class="btn2" value="Info">
+				</form>
+                <form method="POST" action="info.php">
+					<input type="submit" name="goa" class="btn1" value="Booking">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

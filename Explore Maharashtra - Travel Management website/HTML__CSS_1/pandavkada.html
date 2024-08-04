@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>  Pavan Kada Waterfall   </title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-size: cover;
+            height: 400px;
+            text-align: center;
+            color: rgb(26, 14, 14);
+            padding: 20px;
+        }
+
+
+        /* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the intro container */
+.intro-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Style the background image */
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+
+/* Add a semi-transparent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style the intro text */
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+    margin-top: 10px;
+}
+
+
+
+        h1 {
+            margin-top: 80px;
+        }
+
+
+
+        /*history section styling*/
+
+        .history-section {
+            background-color: #e5ebe5;
+            padding: 20px;
+           
+        }
+
+        /* history Container styles */
+        .container {
+            margin: 10px;
+            padding: 20px;
+            color: #090000;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        /* Flex container for responsiveness */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        /* Header and Location styles */
+        .header-container {
+            flex-basis: 100%;
+            background-color: #c0dad8;
+            color: #ada8a8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Main content container styles */
+        .main-container {
+            flex-basis: calc(50% - 20px);
+            background-color: #ccd9d6;
+        }
+
+        /* Map container styles */
+        /* Map container styles */
+.map-container {
+    flex-basis: calc(50% - 20px);
+    background-color: #222929;
+    color: #fff;
+    margin: 10px auto; /* Center horizontally by adding 'auto' to left and right margins */
+    padding: 20px;
+    text-align: center; /* Center the content */
+}
+
+
+        /* Responsive CSS for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-basis: 80%;
+            }
+        }
+
+
+/* Style the flex container to arrange items side by side */
+
+
+/* Style for the individual containers */
+/* Style for the Best Time to Visit container */
+/* Style for the Best Time to Visit container */
+.best-time-container {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Style for the Tips Before Visiting Waterfall container */
+.tips-container {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+/* Style for the flex container to arrange items side by side */
+.flex-container {
+    display: flex;
+}
+
+
+
+
+        /* Nearby Places container styles */
+        .nearby-places-container {
+            flex-basis: calc(25% - 20px);
+            margin: 8px;
+            padding: 1px;
+            background-color: #d8e4e9;
+            color: #151313;
+        }
+
+        .nearbyplaces-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Center the Location container */
+        .center-location-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Flex container for the last 4 Nearby Places containers */
+        .nearby-places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+
+
+          /* CSS for the gallery container */
+            /* CSS for the gallery container */
+        .gallery-container {
+            max-width: 600px; /* Set a maximum width for the image gallery */
+            margin: 0 auto;  /* Add margin to create space between the two containers */
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .gallery {
+            display: inline-block;
+            transition: transform 1s ease-in-out;
+        }
+        
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 10px;
+        }
+
+       
+
+
+/*hotel design */
+        .hotel-container {
+            width: 23%; /* Adjust the width as needed */
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #b1aaaa;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: #eceaea;
+        }
+
+        /* Flex container for arranging containers side by side */
+        .hotel-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Wrap to the next row if the screen is too narrow */
+        }
+        /* Style for hotel images */
+        .hotel-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+
+          /* Style for the "More Details" button */
+          .more-details-button {
+            background-color: #565b5b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .more-details-button:hover {
+            background-color: #1e7e7b;
+        }
+
+
+        
+  .footer {
+    margin-top:15px;
+    
+
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.85rem;
+}
+ .foot-panel2  {
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+ } 
+        .foot-panel3 {
+         background-color: #222f3d;
+         color: white;
+         border-top:0.5px solid white;
+         height:70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+  }
+  .separate-container {
+            background-color: #607389;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .separate-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for social media icons within separate container */
+        .social-icons-container {
+            font-size: 34px;
+            
+        }
+        p{
+            margin-left: 25px;
+            margin-right: 25px;
+            
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="intro-container">
+ <img src="https://4.bp.blogspot.com/-8U_9d74P7Q8/VgYAU2ktFrI/AAAAAAAAFJM/SWit_PKRWN4/s640/pandavkada%2Bwaterfalls%2Bkharghar%2B%25288%2529.JPG" alt="Website Background Image" class="background-image">
+    <div class="overlay"></div>
+    <div class="intro-text">
+        <h1>Pavan Kada Waterfall</h1>
+        <h2></h2>
+       
+    </div>
+   
+</div>
+
+
+
+<main>
+    <section class="history-section container">
+        <h2>History</h2>
+       <p> Pavankada Waterfall is a relatively new waterfall, having been created in the early 2000s during the construction of the Kharghar Hills development project. The waterfall was created by diverting the waters of a nearby stream into a man-made waterfall. </p>
+       <p> The waterfall is named after Pavankada Hill, which is located nearby. Pavankada Hill is a sacred hill for Hindus, and it is believed to be the birthplace of Lord Hanuman. </p>
+       <p> The Pavankada Waterfall quickly became a popular tourist destination, especially during the monsoon season when the waterfall is at its most spectacular. The waterfall is surrounded by lush greenery and offers visitors a chance to escape the hustle and bustle of city life and immerse themselves in the beauty of nature. </p>
+       <p> In recent years, the Pavankada Waterfall has also become a popular spot for trekking and rappelling. The waterfall is surrounded by a number of trekking trails, which offer stunning views of the surrounding hills and valleys. The waterfall is also a popular spot for rappelling, as the rock face is ideal for the activity. </p>
+       <p> Pavankada Waterfall is a popular tourist destination, especially during the monsoon season. </p>
+        <p>  </p>
+    </section>
+    <br>
+
+
+    <!-- Main Features container -->
+    <div class="main-container container">
+        <h2>Main Features</h2>
+        <ul>
+            <li><strong> Height:      </strong>   The waterfall is approximately 100 meters high.        </li>
+            <li><strong>  Natural pool:   </strong>   The waterfall drops into a natural pool at the base, which is a popular spot for swimming.        </li>
+            <li><strong>  Surrounding area:   </strong>    The waterfall is located in the Kharghar Hills, which are known for their scenic beauty and biodiversity.       </li>
+            <li><strong>   Accessibility:  </strong>    The waterfall is relatively easy to reach, either by taxi or auto-rickshaw from Kharghar railway station or bus stand, or by a short trek from Kharghar.        </li>
+            <li><strong>   Popularity  </strong>  Pavankada waterfall is a popular tourist destination, especially during the winter months when the weather is pleasant.         </li>
+          <p> The water quality of the waterfall is generally good, although it is important to note that the waterfall can be closed to tourists during the monsoon season due to safety concerns.</p>
+        
+        </div>
+
+
+
+        
+ <div style="display: flex;">
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="  https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/bb/08/37/pandavkada-falls.jpg?w=1200&h=-1&s=1   " alt="Image 2">
+            <img src="  https://www.treksandtrails.org/blog/wp-content/uploads/2020/06/Pandavkada-Waterfall-1-1-1024x728.jpg   " alt="Image 2"> <!-- Add more images here -->
+        <img src=" https://gumlet.assettype.com/freepressjournal/2021-06/2eab0598-f5e1-4f47-b3dc-57a649e4930d/pandavkada.jpg    " alt="Image 2">
+            <img src="  https://images.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/08/04/Pictures/ht-metro-ht-navi-mumbai_49e6ec04-b629-11e9-bb84-86ad41188646.jpg   " alt="Image 2">
+            <img src="   https://yometro.com/images/places/pandavkada-falls.jpg  " alt="Image 2">
+            </div>
+    </div>
+
+  
+   </div>
+   <br>
+
+
+
+    <script>
+        const gallery = document.querySelector('.gallery');
+        let imageIndex = 0;
+        const intervalTime = 3000; // Change image every 3 seconds
+
+        function nextImage() {
+            imageIndex = (imageIndex + 1) % gallery.children.length;
+            updateGallery();
+        }
+
+        function updateGallery() {
+            const translateX = -imageIndex * 100;
+            gallery.style.transition = 'transform 1s ease-in-out';
+            gallery.style.transform = `translateX(${translateX}%)`;
+        }
+
+        setInterval(nextImage, intervalTime);
+    </script>
+
+
+<div class="flex-container">
+       
+            <!-- Best Time to Visit container -->
+            <div class="best-time-container container">
+                <h2>Best Time to Visit</h2>
+            <p> 
+                The best time to visit Pavankada waterfall is during the winter months <strong>(November to February) </strong>when the weather is pleasant.   </p> 
+            <p> The waterfall is closed to tourists during the monsoon season (June to September) due to safety concerns.   </p>    
+            <p>  During the winter months, the weather in Navi Mumbai is generally mild and sunny. This makes it ideal weather for visiting the waterfall and enjoying the surrounding area.  </p> 
+           
+            </div>
+
+            <!-- Tips Before Visiting Waterfall container -->
+            <div class="container">
+                <h2>Tips Before Visiting </h2>
+            <ul>
+                <p></p>
+               <li> Avoid visiting the waterfall during the monsoon season, as the rocks can be slippery and dangerous.  </li>
+              <p></p>
+               <li>  Wear comfortable shoes and clothing, as you will need to walk over slippery rocks to reach the waterfall. </li>
+               <p></p>
+               <li>   Be careful of the monkeys that live in the area.</li>
+               <p></p>
+               <li> Do not visit in mansoon season ,for safety concerns.  </li>
+            
+
+            </ul>
+            </div>
+    </div>
+
+
+        <div class="flex-container">
+            <!-- Location container -->
+            <div class="map-container center-location-container container">
+                <h2>Location</h2>
+                <p>  Kharghar, suburb of Navi Mumbai, Maharashtra   </p>
+
+                <!-- Embed the map here -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241210.2261843919!2d72.80845877253383!3d19.155425925354958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb0ccc991cff%3A0x3311ec8ccda773e8!2sPachwad%20waterfall!5e0!3m2!1sen!2sin!4v1697706666557!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+<div>
+
+
+<h2> Nearby places you must visit</h2>
+
+ <div class="nearby-places">
+            <!-- Nearby Places containers -->
+            <div class="nearby-places-container container">
+                <img src=" https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1073721995_20191213105915_20191213105938.jpg " alt="Tamhini Ghat"  class="nearbyplaces-image">
+                <h2> Marine Drive </h2>
+                <p> Marine Drive is a 3.6-kilometer-long Promenade along the Netaji Subhash Chandra Bose Road in Mumbai, India. It is a popular tourist destination, known for its scenic views of the Arabian Sea and the city skyline  </p>
+                <h3>Interesting Facts  </h3>
+    <ul>
+        <li>It was constructed in the 1920s by Pallonji Mistry, a Parsi businessman.  </li>
+        <li> The drive is named after the Prince of Wales, who visited Mumbai in 1921. </li>
+        <li>The drive is also known as the Queen's Necklace. </li>
+        <li> Marine Drive is a popular spot for filming Bollywood movies. </li>
+   
+    </ul>
+
+    <a href=".html"><button>Read More</button></a>
+
+  </div>
+
+  <div class="nearby-places-container container">
+    <img src="https://img.veenaworld.com/wp-content/uploads/2021/03/Gateway-of-India-Mumbai-History-and-Heritage.jpeg  " alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2>Gateway Of India </h2>
+    <p> The Gateway of India is a basalt arch monument built in the early 20th century in Bombay, India. The monument is located at the tip of the Apollo Bunder waterfront promenade, overlooking the Arabian Sea. </p>
+    <h3> Some Facts  </h3>
+<ul>
+<li>The monument was designed by George Wittet.  </li>
+<li>  The monument cost approximately 21 lakh rupees to build.</li>
+<li> The Gateway of India is made of basalt stone, which is a type of volcanic rock. </li>
+<li> The monument is decorated with sculptures and carvings of Hindu and Muslim motifs. </li>
+
+</ul>
+
+<a href=".html"><button>Read More</button></a>
+
+</div>
+
+<div class="nearby-places-container container">
+    <img src=" https://www.fabhotels.com/blog/wp-content/uploads/2018/08/600x400-35.jpg " alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2> Elephanta Caves </h2>
+    <p>   The Elephanta Caves are a collection of rock-cut cave temples predominantly dedicated to the Hindu god Shiva. They are located on Elephanta Island, or Gharapuri, in Mumbai </p>
+    <h3>  Best Features  </h3>
+<ul>
+<li> The Elephanta Caves are a UNESCO World Heritage Site located on Elephanta Island </li>
+<li> The caves are a collection of rock-cut temples and sculptures dating back to the 5th and 6th centuries AD.   </li>
+<li>They are dedicated to the Hindu god Shiva .  </li>
+<li> The Caves also feature a number of other notable sculptures and architectural features </li>
+</ul>
+
+<a href=".html"><button>Read More</button></a>
+
+</div>
+
+<div class="nearby-places-container container">
+    <img src=" https://img.veenaworld.com/wp-content/uploads/2021/07/Haji-Ali-Dargah-Mumbai-History-Timings-and-Location.jpg " alt="Tamhini Ghat"  class="nearbyplaces-image">
+    <h2>Haji Ali Dargah  </h2>
+    <p> Haji Ali Dargah is a mosque and dargah (tomb) located on an islet off the coast of Worli in Mumbai, India. It is one of the most iconic landmarks in Mumbai and is visited by millions of people each year.
+    </p>
+    <h3>Some Facts  </h3>
+<ul>
+<li>The dargah is open to visitors of all faiths.  </li>
+<li> Visitors are required to dress modestly when visiting the dargah. </li>
+<li>The dargah is a popular place for weddings and other celebrations.  </li>
+<li> The dargah is also a popular spot for filming movies and TV shows. </li>
+
+</ul>
+
+<a href=".html"><button>Read More</button></a>
+
+</div>
+
+</div> 
+
+<div>
+    <h2>Nearby Hotels</h2>
+    
+    <!-- Flex container for arranging hotels in a row -->
+    <div class="hotel-row">
+        <!-- Hotel 1 -->
+        <div class="hotel-container">
+            <img src="  https://etimg.etb2bimg.com/photo/97087469.cms   " alt="Hotel " class="hotel-image">
+            <h2> Royal Tulip      </h2>
+            <p>Address:    26-B Sector 7 Khargar, Navi Mumbai 410210 India   </p>
+            <p>    3 Attractions within 0.5 km   </p>  
+            <p>Price: From Rs 6,719  </p>
+
+            <a href="    https://www.tripadvisor.in/Hotel_Review-g1532344-d3504969-Reviews-Royal_Tulip_Navi_Mumbai-Navi_Mumbai_Maharashtra.html    " class="more-details-button">Click Here for More Details</a>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div class="hotel-container">
+            <img src="  https://media-cdn.tripadvisor.com/media/photo-s/04/99/ae/e9/abbott-hotel.jpg    " alt="Hotel " class="hotel-image">
+            <h2> Abbott Hotel     </h2>
+            <p>Address: 
+                Sector 2, Vashi, Navi Mumbai 400703 India   </p>
+            <p>     10 Attractions within 1 km   </p>  
+            <p>Price: From Rs 5,161  </p>
+
+            <a href="https://www.tripadvisor.in/Hotel_Review-g1532344-d1204333-Reviews-Abbott_Hotel-Navi_Mumbai_Maharashtra.html       " class="more-details-button">Click Here for More Details</a>
+        </div>
+
+
+        <!-- Hotel 3 -->
+        <div class="hotel-container">
+            <img src="  https://image.wedmegood.com/resized/540X/uploads/member/21006/1443595120_PanPool2_RO_Mumbai_82371_w.jpg    " alt="Hotel " class="hotel-image">
+            <h2>   Royal Orchid Central Grazia   </h2>
+            <p>Address: 67 Plot No Plot # 67, L-3, Sector 19, Navi, Navi Mumbai 400705 India   </p>
+            <p>   3  Attractions within 1 km   </p>  
+            <p>Price: From Rs 6,383 </p>
+
+            <a href="        " class="more-details-button">Click Here for More Details</a>
+        </div>
+    </div>
+
+</div>  
+    </main>
+
+    <footer> 
+        <div class="foot-panel">
+           
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <h3>Accommodations</h3>
+    
+    <a>Hotels<br>
+    Resorts<br>
+    Hostels<br>
+    Vacation Rentals<br>
+    Camping Sites<br>
+    Bed and Breakfast<br>
+    Flight Booking<br>
+    Airlines<br>
+    Airport Information<br>
+    Flight Status<br>
+    Baggage Guidelines<br>
+    Frequent Flyer Programs</a>
+            </ul>
+            <ul>
+                <h3>Travel Guides</h3>
+    
+    <a>Travel Tips<br>
+    Packing Lists<br>
+    Visa and Passport Information<br>
+    Travel Insurance<br>
+    Local Etiquette<br>
+    Cultural Insights<br>
+    Sightseeing<br>
+    Outdoor Adventures<br>
+    Cultural Experiences<br>
+    Food and Dining<br>
+    Shopping<br>
+    Nightlife</a>
+            </ul>
+            <ul>
+                <h3>About Us</h3>
+                <a>Company Information<br>
+                Our Team<br>
+                Mission and Values<br>
+                Testimonials<br>
+                Contact Information<br>
+                Careers<br>
+                FAQs<br>
+                Contact Us<br>
+                Booking Assistance<br>
+                Cancelation Policy<br>
+                Travel Alerts<br>
+                Feedback</a>
+            </ul>
+            <ul>
+                <h3>Social Media</h3>
+                <a>Facebook
+                    <br>
+                    Twitter
+                    <br>
+                    Instagram<br>
+                    Pinterest<br>
+                    YouTube<br>
+                    Blog Subscription<br>
+                    Travel Advisories<br>
+                    Health and Vaccination<br>
+                    Safety Tips<br>
+                    Emergency Contacts<br>
+                    Travel Insurance</a>
+    
+            </ul>
+        </div>
+        
+       
+        </footer>
+
+        <div class="separate-container">
+            <h3>Follow Us on Social Media</h3>
+    
+            <!-- Social media icons within separate container -->
+            <div class="social-icons-container">
+                <a class="social-icon-link facebook" href="https://www.facebook.com/ExploreMaharashtraWebsite?mibextid=ZbWKwL " target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon-link twitter" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08 " target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon-link instagram" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-icon-link linkedin" href="https://www.linkedin.com/in/explore-maharashtra-c9-aa2729294/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social-icon-link youtube" href="https://www.youtube.com" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <!-- End of social media icons within a separate container -->
+    
+            <!-- Rest of your content goes here -->
+    
+            <p>Stay connected with us on social media for updates and more!</p>
+    
+            <!-- Phone number and address -->
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: VIT Pune, IT Department, SY-C-Group No.15, Pune, India</p>
+            </div>
+            <!-- End of phone number and address -->
+        </div>
+       
+    
+    </body>
+    
+    </html>
