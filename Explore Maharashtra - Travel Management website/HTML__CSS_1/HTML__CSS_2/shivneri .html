@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>shivneri fort</title>
+</head>
+<body>
+    <style>
+
+        /* Style for the navigation bar */
+nav {
+    background-color: #0c0505; /* Background color of the navigation bar */
+    color: white; /* Text color */
+    padding: 10px 0; /* Add padding to space out the links */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align the links horizontally */
+}
+
+.navbar li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between the links */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: rgb(231, 231, 231); /* Text color for links */
+    font-weight: bold; /* Bold text for links */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #ff6600; /* Change the color to your desired hover color */
+}
+
+           h2 {
+        margin-left: 50px;
+           }
+
+p {
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+
+
+
+
+
+        /* Reset default margin and padding */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Set background image and apply blur effect */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 550px; /* Set the desired height for the blurred background */
+            overflow: hidden;
+        }
+
+        .blur-background {
+            background-image: url('.vscode/Nagarkhana,_Raigad_Fort,_India (1).jpg');
+            height: 1200px;
+            width: 1500px;
+            filter: blur(50px); /* Adjust the blur intensity as needed */
+            position: absolute;
+            z-index: -1;
+        }
+
+        /* Style the overlay image */
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 38%; /* Adjust the left position to your desired spacing */
+            transform: translate(-50%, -50%);
+            width: 800px; /* Set the desired width for the overlay image */
+            height: 510px; /* Set the desired height for the overlay image */
+           
+        }
+
+        /* Create a new container on the right side */
+        .right-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px; /* Adjust the width of the right container as needed */
+            height:510px;
+            background-color: rgba(46, 45, 45, 0.7);
+             /* Background color for the right container */
+             margin-right: 200px;
+             border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+             margin-top: 16px;
+        }
+
+        .fort-text {
+            font-size: 36px;
+            font-weight: bold;
+           margin-top: 170px;
+           margin-left: 50px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style for the location symbol */
+        .location-symbol {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 8px;
+            margin-top: 10px;
+            margin-left: 130px;
+        }
+
+        /* Style for the location text */
+        .location-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            margin-top: 10px;
+            margin-left: 90px;
+        }
+        /* Style for the weather/climate container */
+/* Style for the blurred background container */
+.container {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Set the desired height for the blurred background */
+    overflow: hidden;
+}
+
+.blur-background1 {
+    background-image: url('.vscode/depositphotos_471952152-stock-photo-abstract-painterly-dramatic-scenery-clouds.jpg');
+    height: 1200px;
+    width: 1500px;
+    filter: blur(15px); /* Adjust the blur intensity as needed */
+    position: absolute;
+    z-index: -1;
+}
+
+/* Style for the weather/climate container */
+.weather-container {
+    background-image: url('.vscode/depositphotos_471952152-stock-photo-abstract-painterly-dramatic-scenery-clouds.jpg'); /* Use the same background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 80px;
+    border-radius: 35px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left; /* Align text to the left */
+    font-family: Arial, sans-serif; /* Specify font family */
+}
+
+/* Style for the weather/climate headings */
+.weather-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #090707; /* Change text color to your preference */
+     /* Convert text to uppercase */
+}
+
+/* Style for the weather/climate content */
+.weather-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000; /* Change text color to your preference */
+}
+
+/* Style for h3 headings within the weather content */
+.weather-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0101; /* Change text color to your preference */
+}
+
+/* Style for paragraph text within the weather content */
+.weather-container p {
+    margin-bottom: 10px;
+}
+
+/* Style for the overall page background (optional) */
+body {
+    background-color: #f0f0f0; /* Change background color to your preference */
+    font-family: Arial, sans-serif; /* Specify font family */
+}
+
+
+
+
+
+.location-container {
+    background-color: white;
+    background-position: center;
+    padding: 20px;
+    height: 400px;
+    margin-top: 20px; /* Adjust margin-top for desired spacing */
+    margin-left: 150px;
+    margin-right: 600px; /* Adjust margin-right for desired spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+
+.location-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #090707; /* Change text color to your preference */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.location-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000; /* Change text color to your preference */
+}
+
+/* Style for h3 headings within the location content */
+.location-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0c0101; /* Change text color to your preference */
+}
+
+/* Style for paragraph text within the location content */
+.location-container p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.horizontal-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 130px;
+            margin-right: 80px;
+            height: 300px;
+            width: 1200px; /* Adjust the width to cover the page minus margins */
+            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+        }
+
+        /* Style for individual containers */
+        .container-item {
+            flex: 0 0 calc(33.3333% - 40px); /* Set the width for each container with margin */
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            /* Add margin to create space between containers */
+            
+            /* Add margin to create space between containers */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Style for the image in the container */
+        .container-image {
+           height: 85%; /* 75% of the container's height for the image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+        }
+
+
+        .container-heading a {
+            text-decoration: none; /* Remove the default underline */
+            color: #333; /* Set the text color to your preference */
+            cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+        }
+
+
+
+h3 {
+    margin-bottom: 5px;
+}
+
+
+        /* Additional styles for the second set of containers */
+        .second-set {
+            margin-top: 30px; /* Add margin to separate the sets of containers */
+        }
+
+
+        .additional-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px; /* Adjust margin-right for desired spacing */
+            height: 330px;
+            margin-left: 70px;
+            width: 1300px;
+            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+        }
+
+        /* Style for individual additional containers */
+        .additional-item {
+            flex: 0 0 calc(25% - 40px); /* Set the width for each container with margin */
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px; /* Add margin to create space between containers */
+            padding: 0px;
+        }
+
+        /* Style for the image in the additional container */
+        .additional-image {
+            height: 230px; /* 75% of the container's height for the image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+        }
+
+        /* Style for the content within the additional container */
+        .additional-content {
+            margin-top: 5px; /* Add space between the image and content */
+        }
+
+
+.h3 {
+    margin-top: 5px;
+}
+
+
+
+.footer {
+    margin-top:15px;
+    
+
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.85rem;
+}
+ .foot-panel2  {
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+ } 
+ ul {
+     margin-top: 20px ;
+ }
+ 
+  ul a {
+     display:block;
+     font-size: 3 rem;
+     margin-top: 10px;
+     color:#dddddd;
+  }
+ 
+  .foot-panel3 {
+         background-color: #222f3d;
+         color: white;
+         border-top:0.5px solid white;
+         height:70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+  }
+
+  .separate-container {
+            background-color: #607389;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .separate-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for social media icons within separate container */
+        .social-icons-container {
+            font-size: 34px;
+            
+        }
+        .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+}
+
+.navbar li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between the links */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #000; /* Text color for links */
+    font-weight: bold; /* Bold text for links */
+    font-size: 16px; /* Adjust font size as needed */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #ff6600; /* Change the color to your desired hover color */
+}
+
+
+/* Style for individual containers */
+
+
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+   
+
+
+
+    </style>
+</body>
+
+<body>
+      <div id="navbar">
+    <a href="travel home page.html">Home</a>
+    <a href="placeshomepage.html">Places</a>
+    <a href="features4.html">Features</a>
+    <a href="about us.html">About Us</a>
+    <a href="travel contact us.html">Contact Us</a>
+    <a href="logout.php">
+        <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+         Logout
+    </a>
+</div>
+    
+    <div class="container">
+        <div class="blur-background"></div>
+        <img src="https://www.holidify.com/images/cmsuploads/compressed/800px-Shivneri_20181113202855_20181113203139.jpg" alt="Overlay Image" class="overlay-image">
+
+        <img src="https://www.holidify.com/images/cmsuploads/compressed/800px-Shivneri_20181113202855_20181113203139.jpg" alt="Overlay Image" 
+        class="blur-background">
+        <div class="right-container">
+            <div class="fort-text">Shivneri fort</div>
+            <div class="location-symbol">&#x1F4CD;</div>
+            <div class="location-text">shivneri, India</div>
+            <!-- Add content for the right container here -->
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="location-container">
+        <h2 class="location-heading"></h2>
+        <p class="weather-content">
+            <h3>Overview</h3>Shivneri Fort is a 17th-century military fortification located near Junnar in Pune district in Maharashtra, India. It is the birthplace of Chhatrapati Shivaji Maharaj, the founder of Maratha Empire.here are statues of Jijabai and young Shivaji inside the fort. At the centre of the fort is a water pond which is called ‘Badami Talav’. To the South of ‘Badami Talav’ are the statues Jijabai and a young Shivaji. 
+        </p>
+        <br>
+    <p><h4>Location: Junnar, Pune, Maharashtra, 410502, India </p>
+    <br>
+    <p><h4>Best Time to Visite: November to February </h4></p>
+    <br>
+    <p><h4>Entry Fee:  free for everyone</h4></p>
+    <br>
+    <p><h4>Timing: 6 AM to 5 PM</h4></p>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+
+
+    <h2>History</h2>
+    <p>
+        Famous as the birth place of Maratha King Chattrapati Shivaji, Shivneri Fort was among the important citadels during Maratha rule. It is located near Junnar town in the Pune district about 95 km north of Pune. The fort attracts a large number of tourists, history buffs and trekkers because of its association with Shivaji, who dreamt of creating a Hindu Swarajya.
+
+Located at an elevation of 2260 ft, the fort resembles the shape of a Shiva-Pind (Divine Phallus). The fort is accessible by two routes – one via stone steps carved out of the rock face which date back to the Satavahana era and the other, a rough extremely hazardous path. The second route has been improved to make it tourist friendly.
+
+When his wife, Jijabai, was pregnant, Shahajiraje Bhosle moved his family to the safety of the Shivneri Fort. Shivaji was born in the fort on February 19, 1630 near the Shivai temple in the fort. He was named Shivaji after Goddess Shivai, who is believed to have protected the young warrior and his kin during the difficult time.
+    </p>
+    <p>
+        The fort has seven doors – Maha Darwaza, Parvangicha Darwaza, Hatti Darwaza, Peer Darwaza, Shipai Darwaza, Phatak Darwaza and Kulambkat Darwaza. Strong walls and sheer rock cliffs on three sides ensured Shivneri was well protected. There is a Shivai Temple inside the fort and a huge statue of Shivaji in front of the main entrance to the fort. Within the fort is a huge lake called the Badami Talav. Remnants of quarters and bungalows can be seen near the lake. A two-storey structure stands at the place where Shivaji was born. The top of the building offers magnificent views of the surrounding landscape. Shivneri fort sits in the midst of several forts. To its north stand the forts of Narayangad and Harishchandragad. Hadsar, Chavand Jeevdhan and Bhairavgad are also close by. Five dams – Vadaj, Yedgaon, Pimpalgaon, Manikdoh and Dimbhe – situated around Shivneri are also popular picnic spots.
+    </p>
+       <br>
+       <br>
+
+
+
+    <h2>Major Features</h2>
+<p>Shivneri Fort, a magnificent historical site situated atop a rugged hill in the Pune district of Maharashtra, is a treasure trove of India's rich heritage. Its most illustrious claim to fame is being the birthplace of Chhatrapati Shivaji Maharaj, a towering figure in Indian history. The fort's major features are a testament to its historical and architectural significance.
+</p>
+<p>
+    The most striking aspect of Shivneri Fort is its massive stone walls, formidable bastions, and intricately designed gateways, all of which reflect its historical military importance as a strategic fortress. As visitors venture inside, they are greeted by the Shivai Devi Temple, an ancient and revered shrine dedicated to the goddess Shivai, from whom Shivaji derived his name. Adjacent to the temple stands a prominent statue of the Maratha king, symbolizing his enduring legacy and significance in Indian history.
+</p>
+<p>
+    The fort's layout is a marvel of defensive design, highlighting the architectural brilliance of its era. Over the centuries, Shivneri Fort witnessed numerous battles, sieges, and changes of rulers, serving as a vital stronghold during pivotal moments in history. Its strategic location allowed for commanding views of the surrounding landscape, adding to its allure.
+</p>
+<p>
+    Today, Shivneri Fort stands as a living testament to the valor and legacy of the Marathas. It beckons pilgrims, tourists, and history enthusiasts to explore its rich heritage. This historical gem not only offers insights into the life and times of Chhatrapati Shivaji Maharaj but also provides a window into the broader history of the Maratha Empire. It serves as a poignant reminder of the indomitable spirit of Shivaji and the enduring influence he left on the Indian subcontinent. Shivneri Fort's enduring significance and timeless charm continue to captivate those who seek to connect with the spirit of one of India's greatest warriors and the remarkable history of the Maratha Empire, making it an essential stop for anyone interested in India's rich cultural tapestry.
+</p>
+
+<!-- Weather/Climate Container -->
+<div class="weather-container">
+    <h2 class="weather-heading">Weather/Climate</h2>
+    <p class="weather-content">
+        Shivneri is a popular tourist destination in Maharashtra and the climate is comfortable all across the year. This place has a tropical climate with three seasons, summer, monsoon and the winter. The weather here is more or less travel-friendly throughout the year. The climate particulars are mentioned as below
+    </p>
+    
+    <h3>Summer</h3>
+    <p>The summer season starts from March and continues till May and the temperature ranges between 22 to 38 degree Celsius. The place experiences maximum heat in the months of April and May.</p>
+    
+    <h3>Monsoon</h3>
+    <p>Monsoon sets in from the beginning of June and continues till the month of October. The area receives moderate rainfall and heavy showers are seen in the months of July and August. There are even landslides and floods during monsoons. Thus it is recommended that tourists avoid this place during the rainy season. It is also very risky for the trekkers because the place becomes slippery due to heavy downpour.</p>
+   
+    <h3>Winter</h3>
+    <p>Winter starts from November till the month of January. The temperature goes down to 11 degree Celsius during December and January. The months of October and March are best time to plan holiday in this place. The climate is pleasant and tourists can explore the fort comfortably.</p>
+
+</div>
+<br>
+<br>
+<br>
+<h2>Shivneri Fort's Historical Marvels</h2>
+<br>
+<div class="horizontal-container">
+    <!-- Container 1 -->
+    <div class="container-item">
+        <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/MainEntranceGate.jpg/300px-MainEntranceGate.jpg"alt="image"
+        class="container-image">
+      
+        <div class="container-text">
+            <h3 class="container-heading"><a href="takmak tok.html">Entrance gate</a></h3>
+           
+        </div>
+    </div>
+    <!-- Container 2 -->
+    <div class="container-item">
+        <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Shivneri_pic2.jpg/300px-Shivneri_pic2.jpg"alt="image"
+        class="container-image">
+
+        <div class="container-text">
+            <h3 class="container-heading"><a href="jadadishwar temple.html">Stairs Leading to Shivneri Fort</a></h3>
+            
+        </div>
+    </div>
+    <!-- Container 3 -->
+    <div class="container-item">
+        <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Shivneri.pic.jpg/300px-Shivneri.pic.jpg"alt="image"
+        class="container-image">
+
+        
+        <div class="container-text">
+            <h3 class="container-heading"><a href="raj bhawan.html">Mandir at Shivneri Fort
+
+            </a></h3>
+            
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<p1><h2>More Atrractions Near Shivneri</h2></p1>
+
+
+
+
+
+    <!-- Additional Containers -->
+    <div class="additional-container">
+        <!-- Additional Container 1 -->
+        <div class="additional-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/1f/b2/c0/mountain-view-side-of.jpg?w=1100&h=-1&s=1"
+         alt="Resorts"
+         class="additional-image"
+         width="300" 
+         height="300" >
+            <div class="additional-content">
+                <h3 class="container-heading"><a href="shivneri fort resort.html">Resorts</a></h3>
+                
+            </div>
+        </div>
+        <!-- Additional Container 2 -->
+        <div class="additional-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/d3/c6/45/saj-by-the-lake.jpg?w=300&h=300&s=1"
+                 alt="Hotels"
+                 class="additional-image"
+                 width="300" 
+                 height="300" 
+            >
+            <div class="additional-content">
+                <h3 class="container-heading"><a href="sinhgad fort hotels.html">Hotels</a></h3>
+            </div>
+        </div>
+        
+       
+        <!-- Additional Container 4 -->
+        <div class="additional-item">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/09/f4/d0/55/lenyadri-caves.jpg"
+            alt="Near places"
+            class="additional-image">
+            <div class="additional-content">
+                <h3 class="container-heading"><a href="shivneri fort near places.html">Near palces</a></h3>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Your other content here -->
+
+  
+
+    <footer> 
+        <div class="foot-panel">
+           
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <h3>Accommodations</h3>
+    
+    <a>Hotels<br>
+    Resorts<br>
+    Hostels<br>
+    Vacation Rentals<br>
+    Camping Sites<br>
+    Bed and Breakfast<br>
+    Flight Booking<br>
+    Airlines<br>
+    Airport Information<br>
+    Flight Status<br>
+    Baggage Guidelines<br>
+    Frequent Flyer Programs</a>
+            </ul>
+            <ul>
+                <h3>Travel Guides</h3>
+    
+    <a>Travel Tips<br>
+    Packing Lists<br>
+    Visa and Passport Information<br>
+    Travel Insurance<br>
+    Local Etiquette<br>
+    Cultural Insights<br>
+    Sightseeing<br>
+    Outdoor Adventures<br>
+    Cultural Experiences<br>
+    Food and Dining<br>
+    Shopping<br>
+    Nightlife</a>
+            </ul>
+            <ul>
+                <h3>About Us</h3>
+                <a>Company Information<br>
+                Our Team<br>
+                Mission and Values<br>
+                Testimonials<br>
+                Contact Information<br>
+                Careers<br>
+                FAQs<br>
+                Contact Us<br>
+                Booking Assistance<br>
+                Cancelation Policy<br>
+                Travel Alerts<br>
+                Feedback</a>
+            </ul>
+            <ul>
+                <h3>Social Media</h3>
+                <a>Facebook
+                    <br>
+                    Twitter
+                    <br>
+                    Instagram<br>
+                    Pinterest<br>
+                    YouTube<br>
+                    Blog Subscription<br>
+                    Travel Advisories<br>
+                    Health and Vaccination<br>
+                    Safety Tips<br>
+                    Emergency Contacts<br>
+                    Travel Insurance</a>
+    
+            </ul>
+        </div>
+        
+       
+        </footer>
+
+        <div class="separate-container">
+            <h3>Follow Us on Social Media</h3>
+    
+            <!-- Social media icons within separate container -->
+            <div class="social-icons-container">
+                <a class="social-icon-link facebook" href="https://www.facebook.com/ExploreMaharashtraWebsite?mibextid=ZbWKwL " target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon-link twitter" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08 " target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon-link instagram" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-icon-link linkedin" href="https://www.linkedin.com/in/explore-maharashtra-c9-aa2729294/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social-icon-link youtube" href="https://www.youtube.com" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <!-- End of social media icons within a separate container -->
+    
+            <!-- Rest of your content goes here -->
+    
+            <p>Stay connected with us on social media for updates and more!</p>
+    
+            <!-- Phone number and address -->
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: VIT Pune, IT Department, SY-C-Group No.15, Pune, India</p>
+            </div>
+            <!-- End of phone number and address -->
+        </div>
+       
+    
+    </body>
+    
+    </html>

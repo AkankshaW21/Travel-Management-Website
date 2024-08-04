@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Containers</title>
+    <style>
+.additional-container {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px; /* Adjust margin-right for desired spacing */
+   /* height: 320px;
+    width: 1300px;*/
+    margin-left: 70px;
+    margin-bottom: 30px; /* Add margin to create space between this container and other content */
+}
+
+/* Style for individual additional containers */
+.additional-item {
+    height: 600px;
+    width: calc(25% - 20px); /* Calculate the width for each container with margin */
+    flex: 0 0 450px; /* Set the width for each container without margin */
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to create space between containers */
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+/* Style for the image in the additional container */
+.additional-image {
+    height: 250px; /* 75% of the container's height for the image */
+    width:430px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Rounded corners only at the top */
+}
+
+/* Style for the content within the additional container */
+.additional-content {
+    margin-top: 5px; /* Add space between the image and content */
+    padding: 0px;
+}
+
+
+.h3 {
+margin-top: 5px;
+}
+p{
+margin-left: 25px;
+margin-right: 25px;
+
+}
+.review-box {
+    background-color: green;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    width: 60px; /* Adjust the width as needed */
+    height: 20px;
+    margin-left: 180px; /* Center the box horizontally */
+    border-radius: 10px;
+}
+
+.rating {
+    font-size: 15px;
+    font-weight: bold;   
+    }
+    .location-rating-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 10px;/* Align items vertically in the center */
+  }
+
+  /* Style for the location symbol */
+  .location-icon {
+    margin-right: 5px;
+    margin-left: 5px;
+     /* Adjust the margin as needed */
+  }
+  
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+   
+
+</style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+<!-- Additional Containers -->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-content"> 
+            <h3>St Laurn The Spiritual Resort</h3>
+        </div>
+        <img class="additional-image" src="https://blessingsonthenet.com/img/uploads/hotels/gallery/aim_bn_1391429792.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+                <div class="location-icon">
+                  <i class='fas fa-map-marker-alt'></i>
+                </div>
+                <h6>0 kms from Sai Teerth Park</h6>
+                <div class="review-box">
+                    <div class="rating">7.4/10</div>
+                  </div>
+              </div>
+              <p>Nestled in the peaceful surroundings of Shirdi, St Laurn The Spiritual Resort offers guests a divine experience with a contemporary touch. A spiritual retreat would benefit greatly from the hotel's calm setting and gracious service. Modern conveniences available to guests include a health centre, an outdoor pool, and a restaurant serving vegetarian meals. The resort is an excellent option for guests who want to experience Shirdi's heavenly ambiance.
+              </p>
+              <h5 style="color: lightslategray; margin-right: 200px;">5 star resort with 10 room options</h5>
+            </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-content">
+            <h3>Sun-n-Sand Suites, Shirdi</h3>
+        </div>
+        <img class="additional-image" src="https://i.travelapi.com/hotels/3000000/2120000/2111100/2111033/67de1f92_z.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+            <div class="location-info">
+                <i class='fas fa-map-marker-alt'></i>
+            </div>
+                  <h6>1 kms from Renest Shraddha Inn Shirdi</h6>
+            
+            <div class="review-box">
+                <div class="rating">7.8/10</div>
+            </div>
+        </div>
+            
+            <p>un-n-Sand Suites, Shirdi, is close to the Sai Teerth Spiritual Theme Park and offers well-furnished and spacious rooms with a warm and welcoming ambiance. The accommodation welcomes pets and houses an on-site restaurant. Along with a well-maintained garden, the property also features a kids club. For fitness lovers, the accommodation features a fitness centre. At the spa and wellness centre, guests can destress and relax. 
+            </p>
+            
+            <h5 style="color: lightslategray; margin-right: 200px;">5-star resort with 2 room options</h5>
+        </div>
+    </div>
+</div>
+<!--container 3 & 4-->
+<div class="additional-container">
+    <!-- Additional Container 1 -->
+    <div class="additional-item">
+        <div class="additional-content"> 
+            <h3>Hotel Temple Tree, Shirdi Newly Renovated</h3>
+        </div>
+        <img class="additional-image" src="https://www.hotelscombined.in/himg/b5/7e/4c/expediav2-2070645-56b5cc-424628.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+                <div class="location-icon">
+                  <i class='fas fa-map-marker-alt'></i>
+                </div>
+                <h6>29.2 kms from Bhimashankar</h6>
+                <div class="review-box">
+                    <div class="rating">8.2/10</div>
+                  </div>
+              </div>
+              <p>If you've dreamt of taking a staycation in an intimate farmhouse with your buddies, this resort in Karjat offers a very snug property curled up right next to a river and a couple of mango trees which you are bound to enjoy. Even though it gives a very homely feel, the view offers scenic abundance which you could use away from the city clutter.
+                To make the most of it, you might want to have a pool party with your friends at this farm stay resort.
+              </p>
+              <h5 style="color: lightslategray; margin-right: 200px;">Resort with 2 room options</h5>
+            </div>
+    </div>
+    <!-- Additional Container 2 -->
+    <div class="additional-item">
+        <div class="additional-content">
+            <h3>Hotel Sai Miracle</h3>
+        </div>
+        <img class="additional-image" src="https://www.earthtrip.in/gallery/hotelImage/1433745113_miracle.jpg">
+        <div class="additional-content">
+            <!-- Wrap location symbol and h6 content in a div -->
+            <div class="location-rating-container">
+            <div class="location-info">
+                <i class='fas fa-map-marker-alt'></i>
+            </div>
+                  <h6> New Pimpalwadi Road, 423109, Shirdi</h6>
+            
+            <div class="review-box">
+                <div class="rating">9.0/10</div>
+            </div>
+        </div>
+            
+            <p>One of the best Shirdi hotels, Hotel Sai Miracle is located at a walking distance of 2 minutes from Sai Baba Temple.
+                Keeping in mind the luxury stay in Shirdi, each room is well embedded with all modern amenities/facilities and features attached bathrooms.3 star hotels in Shirdi with 44 Deluxe and Super Deluxe Rooms well adorned with rich interiors, intricate decorations and sleek furnishing. 
+            </p>
+            
+            <h5 style="color: lightslategray; margin-right: 200px;"> Resort with 5 room options</h5>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

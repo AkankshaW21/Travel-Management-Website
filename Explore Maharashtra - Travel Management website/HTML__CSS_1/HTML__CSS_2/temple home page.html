@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>water Park</title>
+    <style>
+        
+#navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      background-color:rgb(1, 1, 22);
+      color: #dfd3d3;
+     
+      margin-left: 0px;
+    }
+    
+    #logo {
+      text-decoration: none;
+      font-size: 24px;
+      color: #dfd3d3;
+    }
+    
+    #navbar a {
+      text-decoration: none;
+      color: #dfd3d3;
+      margin: 0 10px;
+      font-size: 19.4px;
+    font-weight: lighter;    }
+        /* Define styles for the container */
+         /* Style for the container */
+         .img-container {
+            position: relative;
+            width: 100%;
+            height: 400px; /* Set the desired height for the blurred background */
+            overflow: hidden;
+        }
+        .overlay-image {
+            position: absolute;
+            top: 50%;
+            left: 50%; /* Adjust the left position to your desired spacing */
+            transform: translate(-50%, -50%);
+            width: 100%; /* Set the desired width for the overlay image */
+            height: 400px; /* Set the desired height for the overlay image */
+           
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            color: white; /* Set the text color */
+            font-size: 50px; /* Set the font size */
+            font-weight: bold; /* Set the font weight */
+        }
+
+.container {
+    width: 500px;
+    max-width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* Add border color here (#007bff is blue, you can change it to your preferred color) */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+      /* Style for the heading */
+      .container h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+
+        /* Style for the image */
+        .container img {
+           height:400px;
+           width: 500px;
+            border-radius: 10px;
+        }
+
+        /* Style for the short text */
+        .container .short-text {
+            margin: 10px 0;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        /* Style for the full text */
+        .container .full-text {
+            display: none;
+            margin: 10px 0;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        /* Style for the "Read More" / "Read Less" button */
+        .read-more-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            outline: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for the button */
+        .read-more-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Container for the boxes in a horizontal line */
+        .container-horizontal {
+            display: flex; /* Make the containers display side by side */
+            justify-content: space-between; /* Add space between them */
+            flex-wrap: wrap; /* Allow them to wrap to the next line if needed */
+        }
+        
+        .additional-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 50px; /* Adjust margin-right for desired spacing */
+            height: 330px;
+            margin-left: 70px;
+            width: 1300px;
+            margin-bottom: 20px; /* Add margin to create space between this container and other content */
+        }
+
+        /* Style for individual additional containers */
+        .additional-item {
+            flex: 0 0 calc(25% - 40px); /* Set the width for each container with margin */
+            background-color: rgba(255, 255, 255, 0.8); /* Set the background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px; /* Add margin to create space between containers */
+            padding: 0px;
+        }
+
+        /* Style for the image in the additional container */
+        .additional-image {
+            height: 230px; /* 75% of the container's height for the image */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 10px 0 0; /* Rounded corners only at the top */
+        }
+
+        /* Style for the content within the additional container */
+        .additional-content {
+            margin-top: 5px; /* Add space between the image and content */
+        }
+
+
+.h3 {
+    margin-top: 5px;
+}
+
+
+
+.footer {
+    margin-top:15px;
+    
+
+}
+
+.foot-panel1 {
+    background-color: #37475a;
+    color: white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 0.85rem;
+}
+ .foot-panel2  {
+    background-color: #222f3d;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+ } 
+ ul {
+     margin-top: 20px ;
+ }
+ 
+  ul a {
+     display:block;
+     font-size: 3 rem;
+     margin-top: 10px;
+     margin-left: 13px;
+     color:#dddddd:
+  }
+ 
+  .foot-panel3 {
+         background-color: #222f3d;
+         color: white;
+         border-top:0.5px solid white;
+         height:70px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+  }
+
+  .separate-container {
+            background-color: #607389;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .separate-container h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Style for social media icons within separate container */
+        .social-icons-container {
+            font-size: 34px;
+        }
+        #navbar a {
+    text-decoration: none;
+    color: #dfd3d3;
+    margin: 0 10px;
+    font-size: 18px;
+    display: flex; /* Add display: flex; to arrange text and icon vertically */
+    flex-direction: column; /* Arrange text and icon in a column layout */
+    align-items: center; /* Center content horizontally */
+}
+/* Style for the navigation links */
+/* Style for individual containers */
+    </style>
+    <script>
+        function toggleText(containerIndex) {
+            var shortText = document.querySelectorAll(".container .short-text");
+            var fullText = document.querySelectorAll(".container .full-text");
+            var readMoreButtons = document.querySelectorAll(".read-more-btn");
+
+            if (fullText[containerIndex - 1].style.display === "none") {
+                fullText[containerIndex - 1].style.display = "block";
+                shortText[containerIndex - 1].style.display = "none";
+                readMoreButtons[containerIndex - 1].textContent = "Read Less";
+            } else {
+                fullText[containerIndex - 1].style.display = "none";
+                shortText[containerIndex - 1].style.display = "block";
+                readMoreButtons[containerIndex - 1].textContent = "Read More";
+            }
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <a href="travel home page.html">Home</a>
+        <a href="placeshomepage.html">Places</a>
+        <a href="features4.html">Features</a>
+        <a href="about us.html">About Us</a>
+        <a href="travel contact us.html">Contact Us</a>
+        <a href="logout.php">
+            <img src="https://cdn-icons-png.flaticon.com/128/10313/10313098.png" alt="Logout" width="20" height="20">
+             Logout
+        </a>
+    </div>
+    <div class="img-container">
+        <img class="overlay-image" src="https://www.rajasthantourplanner.com/blog/wp-content/uploads/2022/05/Mahamandir-Temple-Jodhpur.jpg " alt="Overlay Image" >
+        <div class="overlay-text">Religious Places To Visit in Maharashtra</div>
+    </div>
+    <br><br>
+    <div class="container-horizontal">
+        <div class="container">
+            <h3>Bhimashankar Temple</h3>
+            <img src="https://cdn1.prayagsamagam.com/media/2023/01/26144406/Bhimashankar-Temple-1-768x432.webp">
+            <p class="short-text">Bhimashankar, located about 100 km from Pune and 223 km from Mumbai, is a popular temple town. It is among one of the twelve traditional 'Jyotilingam' shrines of Lord Shiva in India.
+                 </p>
+            <p class="full-text">Bhimashankar is located in the village Bhorgiri in the ghat region of the Sahyadri range. Situated at an height of around 3,250 feet, Bhimashankar is surrounded by hills and is covered by thick green rainforests.
+                <br><br><b>Location:</b>Bhorgiri,Pune,Maharashtra
+                <br><br><b>Best Time to Visit:</b>  Nov-Feb
+                <br><br><b>Phone: </b>088887 73300
+            </p>
+                
+                
+            <button class="read-more-btn" onclick="toggleText(1)">Read More</button>
+         
+        </div>
+    
+        
+        <div class="container-horizontal">
+        <div class="container">
+            <h3>Shirdi</h3>
+            <img src="https://www.savaari.com/blog/wp-content/uploads/2021/02/shirdi-sai-temple.jpg" alt="Image Alt Text">
+
+            
+            <p class="short-text">Located at a distance of 122 Km from Nasik in the Ahmednagar district of Maharashtra, Shirdi is the home of Sai Baba. It is believed that Sai Baba arrived at Shirdi in 1858 and spent 60 years of his life here until he attained salvation in 1918. 
+            </p>
+            <p class="full-text"> Sai Baba is popularly known as the 'child of God', as he always spread the message of universal brotherhood.
+
+                Apart from his shrine, there are many small temples in the complex, such as Chavadi, Samadhi Mandir, Dwarkamai. Shani Shignapur is located at a distance of 72km from Shirdi.
+                <br><br><b>Location:</b>Ahmednagar, Maharashtra
+                <br><br><b>Best Time to Visite:</b> Jul-Mar
+                <br><br><b>Phone: </b>02423 258 777
+            </p>
+            <button class="read-more-btn" onclick="toggleText(2)">Read More</button>
+        </div>
+    </div>
+
+    <!-- Add a separator or spacing if needed -->
+
+    <div class="container-horizontal">
+        <div class="container">
+            <h3>Dagadusheth Halwai Ganapati Temple</h3>
+            <img src="https://utsav.gov.in/public/uploads/darshan_cover_image/darshan_42/1651224930143200465.jpg " alt="Image Alt Text">
+            <p class="short-text">The Dagadusheth Halwai Ganapati temple is a Hindu Temple located in Pune and is dedicated to the Hindu god Ganesh. The temple is visited by over hundred thousand pilgrims every year. Devotees of the temple include celebrities and chief ministers of Maharashtra who visit during the annual ten-day Ganeshotsav festival.</p>
+
+            <p class="full-text">For over 127 years and counting, it has played a significant role in maintaining the tradition of Sarvajanik Ganpati or large-scale public celebrations of the ten-day festival.
+               Unlike any other Ganpati idol, Dagdusheth Ganpati casts a spell with its distinctive features, intricate ornaments and all its divine glory.
+               <br><br><b>Location:</b>Ganpati Bhavan, 250, Chhatrapati Shivaji Maharaj Rd, Budhwar Peth, Pune, Maharashtra
+               <br><br><b>Timings:</b>6:00 am - & 10:30 pm
+               <br><br><b>Phone:020 2447 9222</b>
+            </p>
+            <button class="read-more-btn" onclick="toggleText(3)">Read More</button>
+        </div>
+
+        <div class="container">
+            <h3>MOUNT MARY CHURCH</h3>
+            <img src="https://www.mountmarybasilicabandra.in/assets/images/basilica_ff34view2webnew.36173148_std.jpg" alt="Image Alt Text">
+            <p class="short-text">Officially the Basilica of Our Lady of the Mount Bandra, colloquially known as Mount Bandra and Mount St Mary Church, is a basilica (shrine) of the Latin Church in India, located in the Bandra neighbourhood of Bombay (Mumbai).</p>
+            <p class="full-text">The festival of the nativity of St Mary, also known as Marymas or the Bandra Fest, is celebrated here on the 8th day of September, which is the occasion of the birth of the virgin-mother of Jesus Christ.
+                <br><br><b>Location:</b> Bandra West, Mumbai, Maharashtra
+                <br><br><b>Architectural style:</b> Gothic Revival architecture
+                <br><br><b>Phone:</b> 075069 81522
+
+            </p>
+            <button class="read-more-btn" onclick="toggleText(4)">Read More</button>
+        </div>
+        <!-- Add more containers here -->
+<div class="container">
+    <h3>Trimbakeshwar Jyotirling Temple</h3>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Trimbakeshwar_Temple-Nashik-Maharashtra-1.jpg" alt="Image Alt Text">
+    <p class="short-text">The Shri Trimbakeshwar Shiva Temple is an ancient Hindu temple in the town of Trimbak, in the Trimbakeshwar tehsil in the Nashik District of Maharashtra, India, 28 km from the city of Nashik and 40 km from Nashik road.</p>
+    <p class="full-text">It is dedicated to Hindu god Shiva and is one of the twelve jyotirlingas where the Hindu genealogy registers at Trimbakeshwar, Maharashtra are kept. 
+
+        <br><br><b>Location:</b>Trimbak, Nashik, Maharashtra
+        <br><br><b>Best Time to Visit:</b> Oct-Ma
+        <br><br><b>Phone:</b> 022 6910 7600
+    </p>
+    <button class="read-more-btn" onclick="toggleText(5)">Read More</button>
+</div>
+
+<div class="container">
+    <h3 >Shri Mahalaxmi - Ambabai Temple</h3>
+    <img src="https://www.inditales.com/wp-content/uploads/2019/06/mahalakshmi-temple-kolhapur.jpg" alt="Image Alt Text">
+    <p class="short-text">Ambabai Temple is an important Hindu temple dedicated to Goddess Lakshmi, who resides here as Supreme Mother Mahalakshmi and is worshipped by locals as Ambabai. </p>
+    <p class="full-text">The Shri Ambabai/Mahalaxmi Temple of Kolhapur in Maharashtra, India, is one of the three and half Shakti Peethas listed in various puranas of Hinduism.
+
+        <br><br><br><b>Location:</b>Kalamba,Kolhapur, Maharashtra 416012
+        <br><br><br><b>Timings:4:00 AM - 10:30 PM</b>
+        <br><br><br><b>Weather:  </b> 18 - 19°C
+
+    </p>
+    <button class="read-more-btn" onclick="toggleText(6)">Read More</button>
+</div>
+
+<div class="container">
+    <h3 >Shri Tulaja Bhavani Temple</h3>
+    <img src="https://i.pinimg.com/474x/48/fc/a2/48fca270626c3b2e5be63086c2bfbf85.jpg" alt="Image Alt Text">
+    <p class="short-text"> It is situated at Tulajapur as such it is popularly known as Tulja Bhavani Temple in many districts of Maharashtra. It is one of the 51 Shakti Peetas attributed to Goddess Parvati.</p>
+    <p class="full-text">Shree Tulaja Bhavani Temple is a Hindu temple dedicated to goddess Bhavani, also referred to as Durga and Sati. It is located in Tuljapur in Dharashiv district of Maharashtra, India, and is considered as one of the 51 Shakti Pithas. It is situated 45 km from Solapur.  
+        <br><br><b>Location:</b>Tuljapur, Maharashtra 41360
+        <br><br><b>Timings:</b>4:00 AM - 10:00 PM
+        <br><br><b> Weather: </b>18 - 19°C
+    </p>
+    <button class="read-more-btn" onclick="toggleText(7)">Read More</button>
+</div>
+
+<div class="container">
+    <h3>Kalaram Temple</h3>
+    <img src="https://hindi.holidayrider.com/wp-content/uploads/2019/12/compressed-uxxx-1200x900.jpg" alt="Image Alt Text">
+    <p class="short-text">The Kalaram Temple is a temple in Nashik of Nashik district in Maharashtra, dedicated to the deity Rama. It is a temple situated in Panchavati area of the Nashik. The temple derives its name from a black statue of Rama. The literal translation of kalaram is "black Rama".
+    </p>
+    <p class="full-text">One of the most important Hindu shrines of the city, Kalaram Temple is dedicated to Lord Rama. The idol of the lord is made in black stone and hence the name Kalarama, which means black Rama in Hindi.
+        <br><br><br><b>Location:</b>Panchavati, Nashik, Maharashtra
+        <br><br><br><b>Timings:</b>5:00 AM - 10:00 PM
+        <br><br><br><b> Phone: </b> 262 1830
+</p>
+    <button class="read-more-btn" onclick="toggleText(8)">Read More</button>
+</div>
+
+<div class="container">
+    <h3> Haji Ali Dargah</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPCf-yCpiAZHO6QGTumk5YuY5Mfhuu15MdDQ&usqp=CAU" alt="Image Alt Text">
+    <p class="short-text">The Haji Ali Dargah is a mosque and dargah or the monument of Pir Haji Ali Shah Bukhari located on an islet off the coast of Worli in the southern Mumbai.
+    </p>
+    <p class="full-text"> An exquisite example of Indo-Islamic Architecture, associated with legends about doomed lovers, the dargah contains the tomb of Haji Ali Shah Bukhari.
+        <br><br><b>Location:</b>Dargah Rd, Haji Ali, Mumbai, Maharashtra 400034
+        <br><br><b>Timings:</b>5:00 AM - 10:00 PM
+        <br><br><b> Phone: </b>022 2352 9082
+</p>
+    <button class="read-more-btn" onclick="toggleText(9)">Read More</button>
+</div>
+
+<div class="container">
+    <h3> Ganpatipule</h3>
+    <img src="	https://kokanplaces.com/wp-content/uploads/2020/09/Ganpatipule.jpg
+    " alt="Image Alt Text">
+    <p class="short-text">Ganpatipule is a town on the Konkan Coast of western India. It’s known for its beaches, such as Ganpatipule Beach and nearby Aare Ware Beach. </p>
+    <p class="full-text">On Ganpatipule Beach, the centuries-old Swayambhu Ganpati Temple is a pilgrimage site and houses a large orange statue of Ganesh. Prachin Konkan is an open-air museum with models depicting traditional Konkan life. Jaigad Fort and a British-built lighthouse lie to the north.
+        <br><br><b>Location:</b> Ganpatipule, Ratnagiri, Maharashtra 415615
+        <br><br><b>Timings:</b> 5:00 am - 9:00 pm 
+        <br><br><b>Phone:</b> 086699 31141
+    </p>
+    <button class="read-more-btn" onclick="toggleText(10)">Read More</button>
+</div>
+
+<!-- End of additional containers -->
+
+    </div>
+
+    
+    <!-- Your other content here -->
+
+  
+
+
+
+    <footer> 
+        <div class="foot-panel">
+           
+        </div>
+        <div class="foot-panel2">
+            <ul>
+       <h5>Accommodations</h5>
+    
+    <a>Hotels<br>
+    Resorts<br>
+    Hostels<br>
+    Vacation Rentals<br>
+    Camping Sites<br>
+    Bed and Breakfast<br>
+    Flight Booking<br>
+    Airlines<br>
+    Airport Information<br>
+    Flight Status<br>
+    Baggage Guidelines<br>
+    Frequent Flyer Programs</a>
+            </ul>
+            <ul>
+                <h5>Travel Guides</h5>
+    
+    <a>Travel Tips<br>
+    Packing Lists<br>
+    Visa and Passport Information<br>
+    Travel Insurance<br>
+    Local Etiquette<br>
+    Cultural Insights<br>
+    Sightseeing<br>
+    Outdoor Adventures<br>
+    Cultural Experiences<br>
+    Food and Dining<br>
+    Shopping<br>
+    Nightlife</a>
+            </ul>
+            <ul>
+                <h5>About Us</h5>
+                <a>Company Information<br>
+                Our Team<br>
+                Mission and Values<br>
+                Testimonials<br>
+                Contact Information<br>
+                Careers<br>
+                FAQs<br>
+                Contact Us<br>
+                Booking Assistance<br>
+                Cancelation Policy<br>
+                Travel Alerts<br>
+                Feedback</a>
+            </ul>
+            <ul>
+                <h5>Social Media</h5>
+                <a>Facebook
+                    <br>
+                    Twitter
+                    <br>
+                    Instagram<br>
+                    Pinterest<br>
+                    YouTube<br>
+                    Blog Subscription<br>
+                    Travel Advisories<br>
+                    Health and Vaccination<br>
+                    Safety Tips<br>
+                    Emergency Contacts<br>
+                    Travel Insurance</a>
+    
+            </ul>
+        </div>
+        </div>
+        
+       
+        </footer>
+        <div class="separate-container">
+            <h3>Follow Us on Social Media</h3>
+    
+            <!-- Social media icons within separate container -->
+            <div class="social-icons-container">
+                <a class="social-icon-link facebook" href="https://www.facebook.com/ExploreMaharashtraWebsite?mibextid=ZbWKwL " target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-icon-link twitter" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08 " target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon-link instagram" href="https://x.com/TravelWebsiteC9?t=ZuYtRs3O_kKxjQBTyl9qfQ&s=08" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="social-icon-link linkedin" href="https://www.linkedin.com/in/explore-maharashtra-c9-aa2729294/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social-icon-link youtube" href="https://www.youtube.com" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <!-- End of social media icons within a separate container -->
+    
+            <!-- Rest of your content goes here -->
+    
+            <p>Stay connected with us on social media for updates and more!</p>
+    
+            <!-- Phone number and address -->
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Address: VIT Pune, IT Department, SY-C-Group No.15, Pune, India</p>
+            </div>
+            <!-- End of phone number and address -->
+        </div>
+       
+    
+    </body>
+    
+    </html>
